@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PIL on Ruddra</title><link>https://ruddra.com/tags/pil/</link><description>Recent content in PIL on Ruddra</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Sun, 28 May 2017 14:35:59 +0000</lastBuildDate><atom:link href="https://ruddra.com/tags/pil/index.xml" rel="self" type="application/rss+xml"/><item><title>Play With Pillow</title><link>https://ruddra.com/posts/play-with-pillow/</link><pubDate>Sun, 28 May 2017 14:35:59 +0000</pubDate><guid>https://ruddra.com/posts/play-with-pillow/</guid><description>Who hasn&amp;rsquo;t heard PIL? It&amp;rsquo;s an image processing library made by python (Python Image Library). Pillow is an extension of it.||||||||||
+Installation So installing pillow is really easy:
+pip install pillow Now we are going to do some image processing cool stuff:
+First Load Image:
+from PIL import Image, ImageOps img = Image.</description></item></channel></rss>

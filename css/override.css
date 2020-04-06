@@ -514,6 +514,10 @@ html {
   .commento-logged-container {
     margin-bottom: 10px;
   }
+
+  .tfbutton svg {
+    margin-bottom: -3px!important;
+  }
 }
 
 blockquote p strong {

@@ -427,6 +427,60 @@ html {
   background: linear-gradient(90deg, rgba(56,167,224,1) 0%, rgba(59,176,237,1) 23%, rgba(63,184,247,1) 64%, rgba(63,194,255,1) 98%, rgba(73,233,255,1) 100%);
   width: 0%
 }
+
+/* Privacy */
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin: auto;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  position: fixed;
+  z-index: 1000;
+  bottom: 30px;
+  font-family: "PT Sans", Helvetica, sans-serif;
+  font-size: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s;
+  animation: fadein 0.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+#close-privacy {
+  cursor: pointer;
+  color: #ffffff;
+  padding-left: 2px;
+  font-size: 9px;
+}
+
+
 /* mobile display */
 
 @media screen and (max-width:64em) {

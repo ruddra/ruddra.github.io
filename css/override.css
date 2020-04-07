@@ -409,6 +409,23 @@ html {
   font-size: 40px;
 }
 
+.progress-container {
+  width: 100%;
+  height: 8px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: .5rem;
+  background: #31d374;
+  width: 0%
+}
+/* mobile display */
+
 @media screen and (max-width:64em) {
   .tfbutton {
     margin-left: -41px!important;
@@ -468,6 +485,9 @@ html {
 }
 
 @media(max-width:30em) {
+  .progress-bar {
+    height: .3rem;
+  }
 
   .post .home-title {
     font-size: 32px;

@@ -450,6 +450,10 @@ html {
   color: #2f343f;
 }
 
+#comment-submitted-box h3 {
+  margin-top: 0px!important;
+}
+
 .pagination-item {
   font-size: 16px;
 }

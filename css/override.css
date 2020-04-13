@@ -565,7 +565,7 @@ html {
   z-index: 1000;
   bottom: 30px;
   font-family: "PT Sans", Helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -624,7 +624,7 @@ html {
   cursor: pointer;
   color: #ffffff;
   padding-left: 2px;
-  font-size: 9px;
+  font-size: 12px;
   opacity: 0.9;
 }
 

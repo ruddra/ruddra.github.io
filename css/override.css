@@ -458,6 +458,10 @@ html {
   font-size: 16px;
 }
 
+.submit-github {
+  background: #000000!important;
+}
+
 .tftextinput {
   height: 28px;
   border-radius: 2px;

@@ -122,7 +122,7 @@ var redirect_uri=window.location.href;window.location.href="https://github.com/l
 redirect_uri;}else{event.currentTarget.submit();}}
 function submitFormWithCode(){var code=getCode()
 var finalUrl="https://ruddra-comments.herokuapp.com/v2/custom/ruddra/ruddra.comments/master/comments/"
-if(code){var loader=document.getElementById('cover-spin');loader.display='block';var updated=updateForm();if(!updated){window.location.href="#comment-error";return null;}
+if(code){var loader=document.getElementById('cover-spin');loader.style.display='block';var updated=updateForm();if(!updated){window.location.href="#comment-error";return null;}
 var form=document.getElementById('comment-form');form.action=finalUrl+code
 form.submit()}}
 submitFormWithCode()</script></div></div><script src=https://ruddra.com/js/bundle.min.js async></script></div></div><label for=sidebar-checkbox class=sidebar-toggle></label><script type=application/javascript>var doNotTrack=false;if(!doNotTrack){window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create','UA-58095062-1','auto');ga('send','pageview');}</script><script async src=https://www.google-analytics.com/analytics.js></script></body><script>function showPrivacy(){if(localStorage.getItem("cookieSeen")!="shown"){var x=document.getElementById("snackbar");x.className="show";localStorage.setItem("cookieSeen","shown")}}

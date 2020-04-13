@@ -445,7 +445,7 @@ html {
   margin-bottom: 0;
 }
 
-#comment-submitted-box i {
+#comment-submitted-box {
   font-size: 18px !important;
   color: #2f343f;
 }
@@ -453,7 +453,14 @@ html {
 #comment-submitted-box h3 {
   margin-top: 0px!important;
   text-align: center !important;
-  font-size: 20px !important;
+  font-weight: 700;
+}
+
+#comment-error h3 {
+  margin-top: 0px!important;
+  text-align: center !important;
+  font-weight: 700;
+  color: rgb(168, 15, 15);
 }
 
 .pagination-item {

@@ -452,6 +452,8 @@ html {
 
 #comment-submitted-box h3 {
   margin-top: 0px!important;
+  text-align: center !important;
+  font-size: 20px !important;
 }
 
 .pagination-item {

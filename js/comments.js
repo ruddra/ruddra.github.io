@@ -106,7 +106,7 @@ function submitComment(event) {
 function submitFormWithCode() {
   var code = getCode()
   var finalUrl =
-    "https://ruddra-comments.herokuapp.com/v2/custom/ruddra/ruddra.comments/master/comments/"
+    "https://ruddra-comments.netlify.com/.netlify/functions/server/v2/custom/ruddra/ruddra.comments/master/comments/"
   if (code) {
     var loader = document.getElementById('cover-spin');
     loader.style.display = 'block';

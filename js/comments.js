@@ -6,16 +6,6 @@ if (window.location.hash == "#comment-submitted") {
   $comTarget.style.display = 'block';
 }
 
-function renderCommentInMD(inputVal) {
-  var converter = new showdown.Converter();
-  document.getElementById('commneto-renderer-msg').innerHTML =
-    `<h2 class="commneto-renderer-msg-header" style="color:rgb(128, 9, 9); font-weight:800;font-size:20px">&nbspPreview:</h2>` +
-    converter
-      .makeHtml(
-        inputVal);
-  document.getElementById('commento-textarea-root').innerHTML = inputVal
-}
-
 window.onscroll = function () {
   scrollProgressFunc()
 };
@@ -89,8 +79,8 @@ function submitComment(event) {
   var code = getCode()
   var inputField = document.getElementById('commento-textarea-root');
   var inputButton = document.getElementById('commento-submit-button-root');
-  inputField.disabled = true;
-  inputButton.disabled = true;
+  inputField.style.disabled = true;
+  inputButton.style.disabled = true;
   if (!code) {
     event.preventDefault();
     storeForm()

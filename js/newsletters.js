@@ -7,3 +7,10 @@ if (window.location.hash == "#newsletter-submitted") {
   var $comTarget = document.getElementById('newsletter-error');
   $comTarget.style.display = 'block';
 }
+
+function loadLoader() {
+  var loader = document.getElementById('cover-spin');
+  loader.style.display = 'block';
+}
+
+document.getElementById("commento-submit-button-root").addEventListener("click", loadLoader)

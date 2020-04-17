@@ -677,6 +677,12 @@ html {
     animation: spin .8s linear infinite;
 }
 
+/* Misc */
+
+.commento-name {
+  cursor: default;
+}
+
 /* mobile display */
 
 @media screen and (max-width: 64em) {
@@ -789,6 +795,11 @@ html {
 
   .tfbutton svg {
     margin-bottom: -3px !important;
+  }
+
+  #comment-submitted-box {
+    padding-top: 40px;
+    margin-bottom: -10px;
   }
 }
 

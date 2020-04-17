@@ -680,7 +680,7 @@ html {
 /* Misc */
 
 .commento-name {
-  cursor: default;
+  cursor: default!important;
 }
 
 /* mobile display */
@@ -692,6 +692,12 @@ html {
 
   .tfbutton svg {
     margin-bottom: -3px !important;
+  }
+}
+
+@media screen and (max-width: 56em){
+  .pagination-item {
+    min-height: 358px;
   }
 }
 

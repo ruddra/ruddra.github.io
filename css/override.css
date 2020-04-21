@@ -565,7 +565,8 @@ html {
   z-index: 1000;
   bottom: 30px;
   font-family: "PT Sans", Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 13px;
+  font-weight: 200;
   left: 50%;
   transform: translateX(-50%);
 }

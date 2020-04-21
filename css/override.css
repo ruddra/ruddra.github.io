@@ -174,120 +174,104 @@ img {
   width: 1rem;
   height: 0.75rem;
   content: "";
-  background-image: -webkit-linear-gradient(
-    to bottom,
-    #fff,
-    #fff 20%,
-    #555 20%,
-    #555 40%,
-    #fff 40%,
-    #fff 60%,
-    #555 60%,
-    #555 80%,
-    #fff 80%,
-    #fff 100%
-  );
-  background-image: -moz-linear-gradient(
-    to bottom,
-    #fff,
-    #fff 20%,
-    #555 20%,
-    #555 40%,
-    #fff 40%,
-    #fff 60%,
-    #555 60%,
-    #555 80%,
-    #fff 80%,
-    #fff 100%
-  );
-  background-image: -ms-linear-gradient(
-    to bottom,
-    #fff,
-    #fff 20%,
-    #555 20%,
-    #555 40%,
-    #fff 40%,
-    #fff 60%,
-    #555 60%,
-    #555 80%,
-    #fff 80%,
-    #fff 100%
-  );
-  background-image: linear-gradient(
-    to bottom,
-    #fff,
-    #fff 20%,
-    #555 20%,
-    #555 40%,
-    #fff 40%,
-    #fff 60%,
-    #555 60%,
-    #555 80%,
-    #fff 80%,
-    #fff 100%
-  );
+  background-image: -webkit-linear-gradient(to bottom,
+      #fff,
+      #fff 20%,
+      #555 20%,
+      #555 40%,
+      #fff 40%,
+      #fff 60%,
+      #555 60%,
+      #555 80%,
+      #fff 80%,
+      #fff 100%);
+  background-image: -moz-linear-gradient(to bottom,
+      #fff,
+      #fff 20%,
+      #555 20%,
+      #555 40%,
+      #fff 40%,
+      #fff 60%,
+      #555 60%,
+      #555 80%,
+      #fff 80%,
+      #fff 100%);
+  background-image: -ms-linear-gradient(to bottom,
+      #fff,
+      #fff 20%,
+      #555 20%,
+      #555 40%,
+      #fff 40%,
+      #fff 60%,
+      #555 60%,
+      #555 80%,
+      #fff 80%,
+      #fff 100%);
+  background-image: linear-gradient(to bottom,
+      #fff,
+      #fff 20%,
+      #555 20%,
+      #555 40%,
+      #fff 40%,
+      #fff 60%,
+      #555 60%,
+      #555 80%,
+      #fff 80%,
+      #fff 100%);
 }
 
 .sidebar-toggle:active,
-#sidebar-checkbox:checked ~ .sidebar-toggle {
+#sidebar-checkbox:checked~.sidebar-toggle {
   color: rgba(255, 255, 255, 0.671);
   background-color: rgb(58, 57, 57);
 }
 
 .sidebar-toggle:active:before,
-#sidebar-checkbox:checked ~ .sidebar-toggle:before {
-  background-image: -webkit-linear-gradient(
-    to bottom,
-    #fff,
-    #fff 20%,
-    #555 20%,
-    #555 40%,
-    #fff 40%,
-    #fff 60%,
-    #555 60%,
-    #555 80%,
-    #fff 80%,
-    #fff 100%
-  );
-  background-image: -moz-linear-gradient(
-    to bottom,
-    #fff,
-    #fff 20%,
-    #555 20%,
-    #555 40%,
-    #fff 40%,
-    #fff 60%,
-    #555 60%,
-    #555 80%,
-    #fff 80%,
-    #fff 100%
-  );
-  background-image: -ms-linear-gradient(
-    to bottom,
-    #fff,
-    #fff 20%,
-    #555 20%,
-    #555 40%,
-    #fff 40%,
-    #fff 60%,
-    #555 60%,
-    #555 80%,
-    #fff 80%,
-    #fff 100%
-  );
-  background-image: linear-gradient(
-    to bottom,
-    #fff,
-    #fff 20%,
-    #555 20%,
-    #555 40%,
-    #fff 40%,
-    #fff 60%,
-    #555 60%,
-    #555 80%,
-    #fff 80%,
-    #fff 100%
-  );
+#sidebar-checkbox:checked~.sidebar-toggle:before {
+  background-image: -webkit-linear-gradient(to bottom,
+      #fff,
+      #fff 20%,
+      #555 20%,
+      #555 40%,
+      #fff 40%,
+      #fff 60%,
+      #555 60%,
+      #555 80%,
+      #fff 80%,
+      #fff 100%);
+  background-image: -moz-linear-gradient(to bottom,
+      #fff,
+      #fff 20%,
+      #555 20%,
+      #555 40%,
+      #fff 40%,
+      #fff 60%,
+      #555 60%,
+      #555 80%,
+      #fff 80%,
+      #fff 100%);
+  background-image: -ms-linear-gradient(to bottom,
+      #fff,
+      #fff 20%,
+      #555 20%,
+      #555 40%,
+      #fff 40%,
+      #fff 60%,
+      #555 60%,
+      #555 80%,
+      #fff 80%,
+      #fff 100%);
+  background-image: linear-gradient(to bottom,
+      #fff,
+      #fff 20%,
+      #555 20%,
+      #555 40%,
+      #fff 40%,
+      #fff 60%,
+      #555 60%,
+      #555 80%,
+      #fff 80%,
+      #fff 100%);
 }
 
 .comment-newsletters {
@@ -372,8 +356,7 @@ html {
 }
 
 .commento-options:hover .onhover {
-  filter: invert(38%) sepia(1%) saturate(2184%) hue-rotate(23deg)
-    brightness(97%) contrast(98%);
+  filter: invert(38%) sepia(1%) saturate(2184%) hue-rotate(23deg) brightness(97%) contrast(98%);
 }
 
 .tag-class {
@@ -451,20 +434,20 @@ html {
 }
 
 #comment-submitted-box h3 {
-  margin-top: 0px!important;
+  margin-top: 0px !important;
   text-align: center !important;
   font-weight: 700;
 }
 
 #comment-error h3 {
-  margin-top: 0px!important;
+  margin-top: 0px !important;
   text-align: center !important;
   font-weight: 700;
   color: rgb(168, 15, 15);
 }
 
 .commento-markdown-help {
-  border:0px!important;
+  border: 0px !important;
 }
 
 .pagination-item {
@@ -472,7 +455,7 @@ html {
 }
 
 .submit-github {
-  background: #000000!important;
+  background: #000000 !important;
 }
 
 .tftextinput {
@@ -502,6 +485,7 @@ html {
   background: transparent;
   border: none;
 }
+
 .tfbutton svg {
   padding-top: 4px;
   margin-bottom: -4px !important;
@@ -540,14 +524,12 @@ html {
   /* background: rgb(46,196,108);
   background: linear-gradient(90deg, rgba(46,196,108,1) 0%, rgba(49,211,116,1) 32%, rgba(56,222,111,1) 64%, rgba(53,228,109,1) 98%, rgba(120,250,3,1) 100%); */
   background: rgb(56, 167, 224);
-  background: linear-gradient(
-    90deg,
-    rgba(56, 167, 224, 1) 0%,
-    rgba(59, 176, 237, 1) 23%,
-    rgba(63, 184, 247, 1) 64%,
-    rgba(63, 194, 255, 1) 98%,
-    rgba(73, 233, 255, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(56, 167, 224, 1) 0%,
+      rgba(59, 176, 237, 1) 23%,
+      rgba(63, 184, 247, 1) 64%,
+      rgba(63, 194, 255, 1) 98%,
+      rgba(73, 233, 255, 1) 100%);
   width: 0%;
 }
 
@@ -582,6 +564,7 @@ html {
     bottom: 0;
     opacity: 0;
   }
+
   to {
     bottom: 30px;
     opacity: 1;
@@ -593,6 +576,7 @@ html {
     bottom: 0;
     opacity: 0;
   }
+
   to {
     bottom: 30px;
     opacity: 1;
@@ -604,6 +588,7 @@ html {
     bottom: 30px;
     opacity: 1;
   }
+
   to {
     bottom: 0;
     opacity: 0;
@@ -615,6 +600,7 @@ html {
     bottom: 30px;
     opacity: 1;
   }
+
   to {
     bottom: 0;
     opacity: 0;
@@ -636,6 +622,7 @@ html {
 #newsletter-submitted p {
   text-align: center !important;
 }
+
 .newsletter-submitted-txt {
   padding-bottom: 10px;
 }
@@ -643,45 +630,60 @@ html {
 /* Spinner */
 
 #cover-spin {
-    position:fixed;
-    width:100%;
-    left:0;right:0;top:0;bottom:0;
-    background-color: rgba(255,255,255,0.7);
-    z-index:9999;
-    display:none;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 9999;
+  display: none;
 }
 
 @-webkit-keyframes spin {
-	from {-webkit-transform:rotate(0deg);}
-	to {-webkit-transform:rotate(360deg);}
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 @keyframes spin {
-	from {transform:rotate(0deg);}
-	to {transform:rotate(360deg);}
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 #cover-spin::after {
-    content:'';
-    display:block;
-    position:absolute;
-    left:48%;top:40%;
-    width:50px;height:50px;
-    border-style:solid;
-    border-color: #1971c2;
-    border-image: linear-gradient(45deg, rgba(100,57,242,1) 0%, rgba(242,55,55,1) 100%);
-    border-image-slice: 9;
-    border-top-color:transparent;
-    border-width: 4px;
-    border-radius:50%;
-    -webkit-animation: spin .8s linear infinite;
-    animation: spin .8s linear infinite;
+  content: '';
+  display: block;
+  position: absolute;
+  left: 48%;
+  top: 40%;
+  width: 50px;
+  height: 50px;
+  border-style: solid;
+  border-color: #1971c2;
+  border-image: linear-gradient(45deg, rgba(100, 57, 242, 1) 0%, rgba(242, 55, 55, 1) 100%);
+  border-image-slice: 9;
+  border-top-color: transparent;
+  border-width: 4px;
+  border-radius: 50%;
+  -webkit-animation: spin .8s linear infinite;
+  animation: spin .8s linear infinite;
 }
 
 /* Misc */
 
 .commento-name {
-  cursor: default!important;
+  cursor: default !important;
 }
 
 /* mobile display */
@@ -696,7 +698,7 @@ html {
   }
 }
 
-@media screen and (max-width: 56em){
+@media screen and (max-width: 56em) {
   .pagination-item {
     min-height: 358px;
   }
@@ -807,6 +809,10 @@ html {
   #comment-submitted-box {
     padding-top: 40px;
     margin-bottom: -10px;
+  }
+
+  .pagination-item {
+    min-height: 305px;
   }
 }
 

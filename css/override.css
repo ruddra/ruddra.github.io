@@ -522,7 +522,7 @@ html {
 .progress-bar {
   height: 0.2rem;
   background: rgb(46, 196, 108);
-  background: linear-gradient(90deg, rgba(46, 196, 108, 1) 0%, rgba(49, 211, 116, 1) 32%, rgba(56, 222, 111, 1) 64%, rgba(53, 228, 109, 1) 98%, rgba(120, 250, 3, 1) 100%);
+  background: linear-gradient(90deg, rgb(32, 175, 91) 0%, rgb(22, 168, 83) 32%, rgb(34, 209, 92) 64%, rgb(48, 202, 97) 98%, rgba(120, 250, 3, 1) 100%);
   width: 0%;
 }
 

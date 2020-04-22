@@ -520,16 +520,9 @@ html {
 
 /* The progress bar (scroll indicator) */
 .progress-bar {
-  height: 0.3rem;
-  /* background: rgb(46,196,108);
-  background: linear-gradient(90deg, rgba(46,196,108,1) 0%, rgba(49,211,116,1) 32%, rgba(56,222,111,1) 64%, rgba(53,228,109,1) 98%, rgba(120,250,3,1) 100%); */
-  background: rgb(56, 167, 224);
-  background: linear-gradient(90deg,
-      rgba(56, 167, 224, 1) 0%,
-      rgba(59, 176, 237, 1) 23%,
-      rgba(63, 184, 247, 1) 64%,
-      rgba(63, 194, 255, 1) 98%,
-      rgba(73, 233, 255, 1) 100%);
+  height: 0.2rem;
+  background: rgb(46, 196, 108);
+  background: linear-gradient(90deg, rgba(46, 196, 108, 1) 0%, rgba(49, 211, 116, 1) 32%, rgba(56, 222, 111, 1) 64%, rgba(53, 228, 109, 1) 98%, rgba(120, 250, 3, 1) 100%);
   width: 0%;
 }
 

@@ -521,8 +521,8 @@ html {
 /* The progress bar (scroll indicator) */
 .progress-bar {
   height: 0.2rem;
-  background: rgb(46, 196, 108);
-  background: linear-gradient(90deg, rgb(32, 175, 91) 0%, rgb(22, 168, 83) 32%, rgb(34, 209, 92) 64%, rgb(48, 202, 97) 98%, rgba(120, 250, 3, 1) 100%);
+  background: rgb(36, 200, 103);
+  background: linear-gradient(90deg, rgba(36, 200, 103, 1) 0%, rgba(38, 203, 105, 1) 32%, rgba(18, 207, 76, 1) 64%, rgba(13, 222, 92, 1) 96%, rgba(114, 255, 0, 1) 100%);
   width: 0%;
 }
 

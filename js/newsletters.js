@@ -13,4 +13,7 @@ function loadLoader() {
   loader.style.display = 'block';
 }
 
-document.getElementById("commento-submit-button-root").addEventListener("click", loadLoader)
+var elm = document.getElementById("commento-submit-button-root")
+if (elm) {
+  elm.addEventListener("click", loadLoader)
+}

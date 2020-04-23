@@ -11,7 +11,10 @@ window.onscroll = function () {
 };
 
 function scrollProgressFunc() {
-  var elmnt = document.getElementsByClassName("post");
+  var elmnt = document.getElementById("blog-post");
+  if (!elmnt) {
+    return
+  }
   var winScroll = elmnt.scrollTop || document.documentElement.scrollTop;
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
@@ -119,4 +122,29 @@ function toggleMarkDownTable() {
   } else {
     x.style.display = "none";
   }
-} 
+}
+
+function showPrivacy() {
+  if (localStorage.getItem("cookieSeen") != "shown") {
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    localStorage.setItem("cookieSeen", "shown")
+  }
+}
+
+showPrivacy();
+
+function closePrivacy() {
+  var fadeTarget = document.getElementById("snackbar");
+  var fadeEffect = setInterval(function () {
+    if (!fadeTarget.style.opacity) {
+      fadeTarget.style.opacity = 1;
+    }
+    if (fadeTarget.style.opacity > 0) {
+      fadeTarget.style.opacity -= 0.1;
+    } else {
+      clearInterval(fadeEffect);
+    }
+  }, 50);
+}
+document.getElementById("close-privacy").addEventListener('click', closePrivacy);

@@ -522,9 +522,9 @@ html {
 .progress-bar {
   height: 0.2rem;
   background: rgb(100, 46, 204);
-  background: -moz-linear-gradient(90deg, rgba(100, 46, 204, 1) 0%, rgba(38, 92, 203, 1) 20%, rgba(46, 157, 204, 1) 40%, rgba(46, 204, 185, 1) 60%, rgba(46, 204, 156, 1) 80%, rgba(46, 204, 113, 1) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(100, 46, 204, 1) 0%, rgba(38, 92, 203, 1) 20%, rgba(46, 157, 204, 1) 40%, rgba(46, 204, 185, 1) 60%, rgba(46, 204, 156, 1) 80%, rgba(46, 204, 113, 1) 100%);
-  background: linear-gradient(90deg, rgba(100, 46, 204, 1) 0%, rgba(38, 92, 203, 1) 20%, rgba(46, 157, 204, 1) 40%, rgba(46, 204, 185, 1) 60%, rgba(46, 204, 156, 1) 80%, rgba(46, 204, 113, 1) 100%);
+  background: -moz-linear-gradient(90deg, rgba(100, 46, 204, 1) 0%, rgba(64, 38, 203, 1) 20%, rgba(46, 114, 204, 1) 40%, rgba(46, 183, 204, 1) 60%, rgba(46, 204, 180, 1) 80%, rgba(46, 204, 113, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(100, 46, 204, 1) 0%, rgba(64, 38, 203, 1) 20%, rgba(46, 114, 204, 1) 40%, rgba(46, 183, 204, 1) 60%, rgba(46, 204, 180, 1) 80%, rgba(46, 204, 113, 1) 100%);
+  background: linear-gradient(90deg, rgba(100, 46, 204, 1) 0%, rgba(64, 38, 203, 1) 20%, rgba(46, 114, 204, 1) 40%, rgba(46, 183, 204, 1) 60%, rgba(46, 204, 180, 1) 80%, rgba(46, 204, 113, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#642ecc", endColorstr="#2ecc71", GradientType=1);
   width: 0%;
 }

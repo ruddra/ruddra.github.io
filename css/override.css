@@ -814,7 +814,7 @@ html {
   }
 
   .pagination-item {
-    min-height: 305px;
+    min-height: 305px !important;
   }
 }
 

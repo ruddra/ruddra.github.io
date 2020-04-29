@@ -150,15 +150,18 @@ function closePrivacy() {
 document.getElementById("close-privacy").addEventListener('click', closePrivacy);
 
 function increaseLikeCounter() {
-  var counters = document.querySelectorAll("#loved-count")
+  var counters = document.querySelectorAll("#like-count")
   for (var i = 0; i < counters.length; i++) {
     var counter = counters[i]
     var value = parseInt(counter.innerText, 10)
     value = isNaN(value) ? 0 : value
     value++
-    counter.innerText = 'x' + value
-    counter.style.color = "#2c4fff"
-    counter.style.fontWeight = "bold"
+    counter.innerText = value
+  }
+  var target_share = document.querySelectorAll("#loved-count");
+  for (var i = 0; i < target_share.length; i++) {
+    target_share[i].style.color = "#2c4fff"
+    target_share[i].style.fontWeight = "bold"
   }
 
 }
@@ -199,6 +202,8 @@ function submitLike() {
   http.setRequestHeader("Access-Control-Allow-Origin", "*");
   http.send(params.join('&'));
   storeLiked()
+  makeRed()
+  increaseLikeCounter()
 }
 
 function storeLiked() {

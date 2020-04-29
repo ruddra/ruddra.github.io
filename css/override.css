@@ -15,6 +15,49 @@
   text-align: justify !important;
 }
 
+.side-share {
+  position: fixed;
+  top: 42%;
+  left: 50%;
+  margin-left: -24em;
+  list-style: none;
+}
+
+#loved-count {
+  font-size: 12px;
+  margin-left: -10px;
+  letter-spacing: .5px;
+}
+
+#love-share {
+  cursor: pointer;
+  margin-left: -2px;
+}
+
+#love-share-mb {
+  cursor: pointer;
+}
+
+.side-share-mb {
+  display: none;
+}
+
+#love-share-sign:hover {
+  fill: pink
+}
+
+#fb-share-sign:hover {
+  fill: #527ad1
+}
+
+#tw-share-sign:hover {
+  fill: rgb(7, 189, 235)
+}
+
+#ln-share-sign:hover {
+  fill: #0e76a8
+}
+
 a:focus,
 a:hover {
   text-decoration: underline;
@@ -704,9 +747,31 @@ html {
   .pagination-item {
     min-height: 358px;
   }
+
+  .side-share {
+    margin-left: -20em;
+  }
 }
 
 @media screen and (max-width: 48em) {
+  .side-share {
+    display: none;
+  }
+
+  .side-share-mb {
+    display: block;
+  }
+
+  #loved-count {
+    font-size: 8px;
+    margin-left: -10px;
+    letter-spacing: .2px;
+  }
+
+  .generic-share a {
+    padding-right: 2px;
+  }
+
   .masthead-search-form {
     display: none;
   }

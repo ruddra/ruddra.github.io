@@ -8,6 +8,7 @@ if (window.location.hash == "#newsletter-submitted") {
   $comTarget.style.display = 'block';
 }
 
+
 function loadLoader() {
   var loader = document.getElementById('cover-spin');
   loader.style.display = 'block';

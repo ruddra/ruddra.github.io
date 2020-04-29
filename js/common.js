@@ -148,3 +148,78 @@ function closePrivacy() {
   }, 50);
 }
 document.getElementById("close-privacy").addEventListener('click', closePrivacy);
+
+function increaseLikeCounter() {
+  var counters = document.querySelectorAll("#loved-count")
+  for (var i = 0; i < counters.length; i++) {
+    var counter = counters[i]
+    var value = parseInt(counter.innerText, 10)
+    value = isNaN(value) ? 0 : value
+    value++
+    counter.innerText = 'x' + value
+    counter.style.color = "#2c4fff"
+    counter.style.fontWeight = "bold"
+  }
+
+}
+
+function loveArticle() {
+  if (alreadyLiked() == true) {
+    return
+  }
+  increaseLikeCounter()
+  makeRed()
+  storeLiked()
+  submitLike()
+}
+
+function alreadyLiked() {
+  return isNaN(localStorage.getItem("liked-" + getSlug()))
+}
+
+function getSlug() {
+  return window.location.pathname.split('/').reverse()[1];
+}
+function submitLike() {
+  var slug = getSlug()
+  var dictionary = {
+    "options[parent]": slug,
+    "options[slug]": slug,
+    "options[origin]": "https://ruddra.com/likes",
+    "fields[email]": window.location.href,
+  }
+  var params = []
+  Object.keys(dictionary).forEach(function (key) {
+    var param = key + "=" + dictionary[key]
+    params.push(param)
+  });
+  var http = new XMLHttpRequest();
+  http.open("POST", "https://ruddra-comments.netlify.app/.netlify/functions/server/v3/entry/github/ruddra/ruddra.likes/master/comments/", true);
+  http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  http.setRequestHeader("Access-Control-Allow-Origin", "*");
+  http.send(params.join('&'));
+  storeLiked()
+}
+
+function storeLiked() {
+  localStorage.setItem("liked-" + getSlug(), "liked")
+}
+
+function makeRed() {
+  var target_share = document.querySelectorAll("#love-share-sign");
+  for (var i = 0; i < target_share.length; i++) {
+    target_share[i].style.fill = "red"
+  }
+}
+
+function showLiked() {
+  if (alreadyLiked() == true) {
+    makeRed()
+    increaseLikeCounter()
+  }
+}
+showLiked()
+var listener_ = document.getElementById("love-share")
+var listener_mb = document.getElementById("love-share-mb")
+listener_.addEventListener('click', submitLike)
+listener_mb.addEventListener('click', submitLike)

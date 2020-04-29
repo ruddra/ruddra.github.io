@@ -24,9 +24,10 @@
 }
 
 #loved-count {
-  font-size: 12px;
-  margin-left: -5px;
-  letter-spacing: .5px;
+  font-size: 10px;
+  margin-left: -7px;
+  letter-spacing: .2px;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
 
 #love-share {

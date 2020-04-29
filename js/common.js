@@ -201,9 +201,6 @@ function submitLike() {
   http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   http.setRequestHeader("Access-Control-Allow-Origin", "*");
   http.send(params.join('&'));
-  storeLiked()
-  makeRed()
-  increaseLikeCounter()
 }
 
 function storeLiked() {
@@ -226,5 +223,5 @@ function showLiked() {
 showLiked()
 var listener_ = document.getElementById("love-share")
 var listener_mb = document.getElementById("love-share-mb")
-listener_.addEventListener('click', submitLike)
-listener_mb.addEventListener('click', submitLike)
+listener_.addEventListener('click', loveArticle)
+listener_mb.addEventListener('click', loveArticle)

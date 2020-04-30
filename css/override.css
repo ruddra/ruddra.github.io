@@ -740,6 +740,14 @@ html {
   padding-top: 3px;
 }
 
+.generic-share .tw-share {
+  padding-left: 5px;
+}
+
+.generic-share .ln-share {
+  padding-left: 5px;
+}
+
 .generic-share a:hover {
   text-decoration: none !important;
 }

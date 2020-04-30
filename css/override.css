@@ -732,6 +732,18 @@ html {
   cursor: default !important;
 }
 
+/* Share */
+
+.generic-share {
+  float: right;
+  display: block;
+  padding-top: 3px;
+}
+
+.generic-share a:hover {
+  text-decoration: none !important;
+}
+
 /* mobile display */
 
 @media screen and (max-width: 64em) {
@@ -763,14 +775,14 @@ html {
     display: block;
   }
 
+  .side-share-mb .generic-share {
+    padding-top: 0px;
+  }
+
   #loved-count {
     font-size: 8px;
     margin-left: -5px;
     letter-spacing: .2px;
-  }
-
-  .generic-share a {
-    padding-right: 6px;
   }
 
   .masthead-search-form {
@@ -846,6 +858,10 @@ html {
 
   .commento-logged-container {
     margin-top: 10px;
+  }
+
+  .post-date .generic-share {
+    float: none;
   }
 }
 

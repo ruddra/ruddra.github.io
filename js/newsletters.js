@@ -14,7 +14,7 @@ function loadLoader() {
   loader.style.display = 'block';
 }
 
-var elm = document.getElementById("commento-submit-button-root")
+var elm = document.getElementById("commento-submit-button-root-newsletter")
 if (elm) {
   elm.addEventListener("click", loadLoader)
 }

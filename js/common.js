@@ -170,6 +170,7 @@ function loveArticle() {
   if (alreadyLiked() == true) {
     return
   }
+  storeLiked()
   makePink()
   submitLike()
 }
@@ -217,7 +218,6 @@ function makeHttpRequest(retryCount) {
     if (this.status === 200) {
       increaseLikeCounter()
       makeRed()
-      storeLiked()
     } else if (retryCount > 0) {
       setTimeout(function () { makeHttpRequest(retryCount--) }, 1000);
     }
@@ -245,7 +245,7 @@ function makeRed() {
 function makePink() {
   var target_share = document.querySelectorAll("#love-share-sign");
   for (var i = 0; i < target_share.length; i++) {
-    target_share[i].style.fill = "#ff8fc7"
+    target_share[i].style.fill = "#ff8fc7";
   }
 }
 

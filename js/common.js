@@ -170,9 +170,7 @@ function loveArticle() {
   if (alreadyLiked() == true) {
     return
   }
-  increaseLikeCounter()
-  makeRed()
-  storeLiked()
+  makePink()
   submitLike()
 }
 
@@ -183,7 +181,22 @@ function alreadyLiked() {
 function getSlug() {
   return window.location.pathname.split('/').reverse()[1];
 }
-function submitLike() {
+
+function createCORSRequest(method, url) {
+  var xhr = new XMLHttpRequest();
+  if ("withCredentials" in xhr) {
+    xhr.open(method, url, true);
+
+  } else if (typeof XDomainRequest != "undefined") {
+    xhr = new XDomainRequest();
+    xhr.open(method, url);
+
+  } else {
+    xhr = null;
+  }
+  return xhr;
+}
+function makeHttpRequest(retryCount) {
   var slug = getSlug()
   var dictionary = {
     "options[parent]": slug,
@@ -196,11 +209,27 @@ function submitLike() {
     var param = key + "=" + dictionary[key]
     params.push(param)
   });
-  var http = new XMLHttpRequest();
-  http.open("POST", "https://ruddra-comments.netlify.app/.netlify/functions/server/v3/entry/github/ruddra/ruddra.likes/master/comments/", true);
+  var url = "https://ruddra-comments.netlify.app/.netlify/functions/server/v2/entry/github/ruddra/ruddra.likes/master/comments/"
+  var http = createCORSRequest("POST", url);
   http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   http.setRequestHeader("Access-Control-Allow-Origin", "*");
+  http.onload = function () {
+    if (this.status === 200) {
+      increaseLikeCounter()
+      makeRed()
+      storeLiked()
+    } else if (retryCount > 0) {
+      setTimeout(function () { makeHttpRequest(retryCount--) }, 1000);
+    }
+  }
+  http.onerror = function () {
+    setTimeout(function () { makeHttpRequest(retryCount--) }, 1000);
+  }
   http.send(params.join('&'));
+}
+function submitLike() {
+  var retryCount = 5
+  makeHttpRequest(retryCount)
 }
 
 function storeLiked() {
@@ -211,6 +240,12 @@ function makeRed() {
   var target_share = document.querySelectorAll("#love-share-sign");
   for (var i = 0; i < target_share.length; i++) {
     target_share[i].style.fill = "red"
+  }
+}
+function makePink() {
+  var target_share = document.querySelectorAll("#love-share-sign");
+  for (var i = 0; i < target_share.length; i++) {
+    target_share[i].style.fill = "#ff8fc7"
   }
 }
 

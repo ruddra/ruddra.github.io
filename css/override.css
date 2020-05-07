@@ -485,13 +485,11 @@ html {
 #comment-submitted-box h3 {
   margin-top: 0px !important;
   text-align: center !important;
-  font-weight: 700;
 }
 
 #comment-error h3 {
   margin-top: 0px !important;
   text-align: center !important;
-  font-weight: 700;
   color: rgb(168, 15, 15);
 }
 

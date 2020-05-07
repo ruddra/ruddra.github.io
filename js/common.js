@@ -1,4 +1,4 @@
-const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+var observer = lozad();
 observer.observe();
 
 if (window.location.hash == "#comment-submitted") {

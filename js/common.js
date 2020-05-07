@@ -1,3 +1,6 @@
+const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+observer.observe();
+
 if (window.location.hash == "#comment-submitted") {
   var $comTarget = document.getElementById('comment-submitted-box');
   $comTarget.style.display = 'block';

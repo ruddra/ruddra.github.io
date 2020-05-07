@@ -2,6 +2,7 @@
   font-family: 'PT Serif';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url('/fonts/pt-serif-v11-latin-regular.eot');
   src: local('PT Serif'), local('PTSerif-Regular'),
     url('/fonts/pt-serif-v11-latin-regular.eot?#iefix') format('embedded-opentype'),
@@ -15,6 +16,7 @@
   font-family: 'PT Serif';
   font-style: italic;
   font-weight: 400;
+  font-display: swap;
   src: url('/fonts/pt-serif-v11-latin-italic.eot');
   src: local('PT Serif Italic'), local('PTSerif-Italic'),
     url('/fonts/pt-serif-v11-latin-italic.eot?#iefix') format('embedded-opentype'),
@@ -28,6 +30,7 @@
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url('/fonts/pt-sans-v11-latin-regular.eot');
   src: local('PT Sans'), local('PTSans-Regular'),
     url('/fonts/pt-sans-v11-latin-regular.eot?#iefix') format('embedded-opentype'),
@@ -41,6 +44,7 @@
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: url('/fonts/pt-sans-v11-latin-700.eot');
   src: local('PT Sans Bold'), local('PTSans-Bold'),
     url('/fonts/pt-sans-v11-latin-700.eot?#iefix') format('embedded-opentype'),

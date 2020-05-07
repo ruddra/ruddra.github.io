@@ -755,6 +755,10 @@ html {
   text-decoration: none !important;
 }
 
+.container a code {
+  color: rgb(50, 115, 168) !important;
+}
+
 /* mobile display */
 
 @media screen and (max-width: 64em) {

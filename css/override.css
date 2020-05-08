@@ -424,6 +424,7 @@ fieldset {
   font-weight: 400;
   padding: 3px;
   margin: 2px;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
 
 .post-date {

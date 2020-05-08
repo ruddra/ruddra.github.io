@@ -6,7 +6,7 @@
 
             #title {
               font-size: 50%;
-              font-family: 'PT Serif', serif;
+              font-family: 'Merriweather', serif;
             }
 
             .cls-1 {

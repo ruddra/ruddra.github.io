@@ -26,8 +26,8 @@
 #loved-count {
   font-size: 10px;
   margin-left: -7px;
-  letter-spacing: .2px;
-  font-family: PT Sans, Helvetica, Arial, sans-serif;
+  letter-spacing: 0.2px;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
 
 #love-share {
@@ -43,19 +43,19 @@
 }
 
 #love-share-sign:hover {
-  fill: pink
+  fill: pink;
 }
 
 #fb-share-sign:hover {
-  fill: #527ad1
+  fill: #527ad1;
 }
 
 #tw-share-sign:hover {
-  fill: rgb(7, 189, 235)
+  fill: rgb(7, 189, 235);
 }
 
 #ln-share-sign:hover {
-  fill: #0e76a8
+  fill: #0e76a8;
 }
 
 .post-title a:hover,
@@ -222,104 +222,120 @@ img {
   width: 1rem;
   height: 0.75rem;
   content: "";
-  background-image: -webkit-linear-gradient(to bottom,
-      #fff,
-      #fff 20%,
-      #555 20%,
-      #555 40%,
-      #fff 40%,
-      #fff 60%,
-      #555 60%,
-      #555 80%,
-      #fff 80%,
-      #fff 100%);
-  background-image: -moz-linear-gradient(to bottom,
-      #fff,
-      #fff 20%,
-      #555 20%,
-      #555 40%,
-      #fff 40%,
-      #fff 60%,
-      #555 60%,
-      #555 80%,
-      #fff 80%,
-      #fff 100%);
-  background-image: -ms-linear-gradient(to bottom,
-      #fff,
-      #fff 20%,
-      #555 20%,
-      #555 40%,
-      #fff 40%,
-      #fff 60%,
-      #555 60%,
-      #555 80%,
-      #fff 80%,
-      #fff 100%);
-  background-image: linear-gradient(to bottom,
-      #fff,
-      #fff 20%,
-      #555 20%,
-      #555 40%,
-      #fff 40%,
-      #fff 60%,
-      #555 60%,
-      #555 80%,
-      #fff 80%,
-      #fff 100%);
+  background-image: -webkit-linear-gradient(
+    to bottom,
+    #fff,
+    #fff 20%,
+    #555 20%,
+    #555 40%,
+    #fff 40%,
+    #fff 60%,
+    #555 60%,
+    #555 80%,
+    #fff 80%,
+    #fff 100%
+  );
+  background-image: -moz-linear-gradient(
+    to bottom,
+    #fff,
+    #fff 20%,
+    #555 20%,
+    #555 40%,
+    #fff 40%,
+    #fff 60%,
+    #555 60%,
+    #555 80%,
+    #fff 80%,
+    #fff 100%
+  );
+  background-image: -ms-linear-gradient(
+    to bottom,
+    #fff,
+    #fff 20%,
+    #555 20%,
+    #555 40%,
+    #fff 40%,
+    #fff 60%,
+    #555 60%,
+    #555 80%,
+    #fff 80%,
+    #fff 100%
+  );
+  background-image: linear-gradient(
+    to bottom,
+    #fff,
+    #fff 20%,
+    #555 20%,
+    #555 40%,
+    #fff 40%,
+    #fff 60%,
+    #555 60%,
+    #555 80%,
+    #fff 80%,
+    #fff 100%
+  );
 }
 
 .sidebar-toggle:active,
-#sidebar-checkbox:checked~.sidebar-toggle {
+#sidebar-checkbox:checked ~ .sidebar-toggle {
   color: rgba(255, 255, 255, 0.671);
   background-color: rgb(58, 57, 57);
 }
 
 .sidebar-toggle:active:before,
-#sidebar-checkbox:checked~.sidebar-toggle:before {
-  background-image: -webkit-linear-gradient(to bottom,
-      #fff,
-      #fff 20%,
-      #555 20%,
-      #555 40%,
-      #fff 40%,
-      #fff 60%,
-      #555 60%,
-      #555 80%,
-      #fff 80%,
-      #fff 100%);
-  background-image: -moz-linear-gradient(to bottom,
-      #fff,
-      #fff 20%,
-      #555 20%,
-      #555 40%,
-      #fff 40%,
-      #fff 60%,
-      #555 60%,
-      #555 80%,
-      #fff 80%,
-      #fff 100%);
-  background-image: -ms-linear-gradient(to bottom,
-      #fff,
-      #fff 20%,
-      #555 20%,
-      #555 40%,
-      #fff 40%,
-      #fff 60%,
-      #555 60%,
-      #555 80%,
-      #fff 80%,
-      #fff 100%);
-  background-image: linear-gradient(to bottom,
-      #fff,
-      #fff 20%,
-      #555 20%,
-      #555 40%,
-      #fff 40%,
-      #fff 60%,
-      #555 60%,
-      #555 80%,
-      #fff 80%,
-      #fff 100%);
+#sidebar-checkbox:checked ~ .sidebar-toggle:before {
+  background-image: -webkit-linear-gradient(
+    to bottom,
+    #fff,
+    #fff 20%,
+    #555 20%,
+    #555 40%,
+    #fff 40%,
+    #fff 60%,
+    #555 60%,
+    #555 80%,
+    #fff 80%,
+    #fff 100%
+  );
+  background-image: -moz-linear-gradient(
+    to bottom,
+    #fff,
+    #fff 20%,
+    #555 20%,
+    #555 40%,
+    #fff 40%,
+    #fff 60%,
+    #555 60%,
+    #555 80%,
+    #fff 80%,
+    #fff 100%
+  );
+  background-image: -ms-linear-gradient(
+    to bottom,
+    #fff,
+    #fff 20%,
+    #555 20%,
+    #555 40%,
+    #fff 40%,
+    #fff 60%,
+    #555 60%,
+    #555 80%,
+    #fff 80%,
+    #fff 100%
+  );
+  background-image: linear-gradient(
+    to bottom,
+    #fff,
+    #fff 20%,
+    #555 20%,
+    #555 40%,
+    #fff 40%,
+    #fff 60%,
+    #555 60%,
+    #555 80%,
+    #fff 80%,
+    #fff 100%
+  );
 }
 
 .comment-newsletters {
@@ -354,11 +370,6 @@ img {
   clear: both;
 }
 
-.pagination-item {
-  /* color: #303030; */
-  font-weight: 800;
-}
-
 .comments {
   color: black;
 }
@@ -379,7 +390,7 @@ img {
   font-weight: 600;
   font-size: 15px;
   padding-left: 30px;
-  font-family: PT Serif, Georgia, "Times New Roman", serif;
+  font-family: Merriweather, Georgia, "Times New Roman", serif;
   /* margin-top: -10px; */
   line-height: 1.5;
   display: block;
@@ -388,7 +399,7 @@ img {
 .post-comment-date {
   font-weight: 400;
   font-size: 14px;
-  font-family: PT Serif, Georgia, "Times New Roman", serif;
+  font-family: Merriweather, Georgia, "Times New Roman", serif;
 }
 
 fieldset {
@@ -400,7 +411,8 @@ fieldset {
 }
 
 .commento-options:hover .onhover {
-  filter: invert(38%) sepia(1%) saturate(2184%) hue-rotate(23deg) brightness(97%) contrast(98%);
+  filter: invert(38%) sepia(1%) saturate(2184%) hue-rotate(23deg)
+    brightness(97%) contrast(98%);
 }
 
 .tag-class {
@@ -426,20 +438,11 @@ fieldset {
   font-weight: 500;
 }
 
-.pagination-text {
-  font-size: 14px;
-  color: rgb(80, 89, 108);
-  font-family: PT Sans, Helvetica, Arial, sans-serif;
-  line-height: 22.5px;
-  font-weight: 200;
-  padding-bottom: 0;
-  margin-bottom: 0;
-  padding-top: 2px;
-}
-
 .pagination-link {
   height: 50px;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
   color: #313131;
+  line-height: 1.2rem;
 }
 
 .pagination-link a {
@@ -455,7 +458,9 @@ fieldset {
 }
 
 .pagination-arrow {
-  color: #515151;
+  color: #222222;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-weight: 700;
 }
 
 .pagination-image img {
@@ -494,6 +499,7 @@ fieldset {
 
 .pagination-item {
   font-size: 16px;
+  padding: 0.5rem 1rem 1rem 1rem;
 }
 
 .submit-github {
@@ -510,13 +516,11 @@ fieldset {
   max-width: 200px;
   margin-right: 2px;
   padding-right: 29px;
-  font-family: PT Sans, Helvetica, Arial, sans-serif;
 }
 
 .tfbutton {
   margin: 0;
   padding-right: 25px;
-  font-family: PT Sans, Helvetica, Arial, sans-serif;
   font-size: 14px;
   outline: none;
   cursor: pointer;
@@ -548,7 +552,7 @@ fieldset {
 }
 
 .post .home-title {
-  font-size: 40px;
+  font-size: 36px;
 }
 
 .progress-container {
@@ -570,9 +574,33 @@ fieldset {
 .progress-bar {
   height: 0.2rem;
   background: rgb(100, 46, 204);
-  background: -moz-linear-gradient(90deg, rgba(100, 46, 204, 1) 0%, rgba(64, 38, 203, 1) 20%, rgba(46, 114, 204, 1) 40%, rgba(46, 183, 204, 1) 60%, rgba(46, 204, 180, 1) 80%, rgba(46, 204, 113, 1) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(100, 46, 204, 1) 0%, rgba(64, 38, 203, 1) 20%, rgba(46, 114, 204, 1) 40%, rgba(46, 183, 204, 1) 60%, rgba(46, 204, 180, 1) 80%, rgba(46, 204, 113, 1) 100%);
-  background: linear-gradient(90deg, rgba(100, 46, 204, 1) 0%, rgba(64, 38, 203, 1) 20%, rgba(46, 114, 204, 1) 40%, rgba(46, 183, 204, 1) 60%, rgba(46, 204, 180, 1) 80%, rgba(46, 204, 113, 1) 100%);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(100, 46, 204, 1) 0%,
+    rgba(64, 38, 203, 1) 20%,
+    rgba(46, 114, 204, 1) 40%,
+    rgba(46, 183, 204, 1) 60%,
+    rgba(46, 204, 180, 1) 80%,
+    rgba(46, 204, 113, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(100, 46, 204, 1) 0%,
+    rgba(64, 38, 203, 1) 20%,
+    rgba(46, 114, 204, 1) 40%,
+    rgba(46, 183, 204, 1) 60%,
+    rgba(46, 204, 180, 1) 80%,
+    rgba(46, 204, 113, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(100, 46, 204, 1) 0%,
+    rgba(64, 38, 203, 1) 20%,
+    rgba(46, 114, 204, 1) 40%,
+    rgba(46, 183, 204, 1) 60%,
+    rgba(46, 204, 180, 1) 80%,
+    rgba(46, 204, 113, 1) 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#642ecc", endColorstr="#2ecc71", GradientType=1);
   width: 0%;
 }
@@ -590,9 +618,8 @@ fieldset {
   position: fixed;
   z-index: 1000;
   bottom: 30px;
-  font-family: PT Sans, Helvetica, sans-serif;
+  font-family: ;
   font-size: 13px;
-  font-weight: 200;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -706,7 +733,7 @@ fieldset {
 }
 
 #cover-spin::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 48%;
@@ -715,13 +742,17 @@ fieldset {
   height: 50px;
   border-style: solid;
   border-color: #1971c2;
-  border-image: linear-gradient(45deg, rgba(100, 57, 242, 1) 0%, rgba(242, 55, 55, 1) 100%);
+  border-image: linear-gradient(
+    45deg,
+    rgba(100, 57, 242, 1) 0%,
+    rgba(242, 55, 55, 1) 100%
+  );
   border-image-slice: 9;
   border-top-color: transparent;
   border-width: 4px;
   border-radius: 50%;
-  -webkit-animation: spin .8s linear infinite;
-  animation: spin .8s linear infinite;
+  -webkit-animation: spin 0.8s linear infinite;
+  animation: spin 0.8s linear infinite;
 }
 
 /* Misc */
@@ -754,6 +785,34 @@ fieldset {
   color: rgb(50, 115, 168) !important;
 }
 
+/* New implementation */
+
+input,
+button,
+label,
+textarea {
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+}
+
+.pagination-text {
+  line-height: 1.2rem;
+  font-size: 13px;
+  padding-top: 4px;
+  margin-bottom: 0;
+}
+
+.post h3,
+.post h4,
+.post h5,
+.post h6 {
+  font-weight: 700;
+}
+
+#list,
+.post-date,
+.commento-name {
+  font-family: "PT Sans";
+}
 /* mobile display */
 
 @media screen and (max-width: 64em) {
@@ -792,7 +851,7 @@ fieldset {
   #loved-count {
     font-size: 8px;
     margin-left: -5px;
-    letter-spacing: .2px;
+    letter-spacing: 0.2px;
   }
 
   .masthead-search-form {
@@ -848,6 +907,14 @@ fieldset {
 
   .post .home-title {
     font-size: 32px;
+  }
+
+  .post-title {
+    font-size: 32px;
+  }
+
+  .post-date {
+    font-size: 16px;
   }
 
   .tfbutton {
@@ -917,11 +984,4 @@ blockquote p strong {
 input:focus {
   outline: none !important;
   box-shadow: none;
-}
-
-.post {
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke: 0.15px;
-  -moz-osx-font-smoothing: grayscale;
-  text-shadow: #fff 0px 1px 1px;
 }

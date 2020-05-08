@@ -27,7 +27,7 @@
   font-size: 10px;
   margin-left: -7px;
   letter-spacing: .2px;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: PT Sans, Helvetica, Arial, sans-serif;
 }
 
 #love-share {
@@ -379,7 +379,7 @@ img {
   font-weight: 600;
   font-size: 15px;
   padding-left: 30px;
-  font-family: "PT Serif", Georgia, "Times New Roman", serif;
+  font-family: PT Serif, Georgia, "Times New Roman", serif;
   /* margin-top: -10px; */
   line-height: 1.5;
   display: block;
@@ -388,7 +388,7 @@ img {
 .post-comment-date {
   font-weight: 400;
   font-size: 14px;
-  font-family: "PT Serif", Georgia, "Times New Roman", serif;
+  font-family: PT Serif, Georgia, "Times New Roman", serif;
 }
 
 fieldset {
@@ -397,10 +397,6 @@ fieldset {
 
 .tiny p {
   text-align: left !important;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 .commento-options:hover .onhover {
@@ -433,7 +429,7 @@ html {
 .pagination-text {
   font-size: 14px;
   color: rgb(80, 89, 108);
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: PT Sans, Helvetica, Arial, sans-serif;
   line-height: 22.5px;
   font-weight: 200;
   padding-bottom: 0;
@@ -514,13 +510,13 @@ html {
   max-width: 200px;
   margin-right: 2px;
   padding-right: 29px;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: PT Sans, Helvetica, Arial, sans-serif;
 }
 
 .tfbutton {
   margin: 0;
   padding-right: 25px;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: PT Sans, Helvetica, Arial, sans-serif;
   font-size: 14px;
   outline: none;
   cursor: pointer;
@@ -594,7 +590,7 @@ html {
   position: fixed;
   z-index: 1000;
   bottom: 30px;
-  font-family: "PT Sans", Helvetica, sans-serif;
+  font-family: PT Sans, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: 200;
   left: 50%;
@@ -925,7 +921,7 @@ input:focus {
 
 .post {
   -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke: 0.15px;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-stroke: 0.45px;
-  text-rendering: optimizeLegibility;
+  text-shadow: #fff 0px 1px 1px;
 }

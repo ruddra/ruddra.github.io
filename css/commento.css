@@ -6,7 +6,7 @@
   overflow-x: hidden;
   padding: 0;
   width: 100%;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: PT Sans, Helvetica, Arial, sans-serif;
 }
 
 .commento-root * {
@@ -14,7 +14,7 @@
   line-height: 1.5;
   color: #50596c;
   text-rendering: optimizeLegibility;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: PT Sans, Helvetica, Arial, sans-serif;
 }
 
 .commento-root code {
@@ -923,5 +923,5 @@
 }
 
 .commento-root-font * {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: PT Sans, Helvetica, Arial, sans-serif;
 }

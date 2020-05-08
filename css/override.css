@@ -32,7 +32,6 @@
 
 #love-share {
   cursor: pointer;
-  margin-left: -2px;
 }
 
 #love-share-mb {
@@ -59,8 +58,8 @@
   fill: #0e76a8
 }
 
-h2 a:hover,
-h2 a:focus {
+.post-title a:hover,
+.post-title a:focus {
   text-decoration: none;
   color: #666666;
 }
@@ -922,4 +921,11 @@ blockquote p strong {
 input:focus {
   outline: none !important;
   box-shadow: none;
+}
+
+.post {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-stroke: 0.45px;
+  text-rendering: optimizeLegibility;
 }

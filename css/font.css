@@ -3,6 +3,14 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
   src: url('/fonts/pt-serif-v11-latin-regular.eot');
   src: local('PT Serif'), local('PTSerif-Regular'),
     url('/fonts/pt-serif-v11-latin-regular.eot?#iefix') format('embedded-opentype'),
@@ -17,6 +25,14 @@
   font-style: italic;
   font-weight: 400;
   font-display: swap;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
   src: url('/fonts/pt-serif-v11-latin-italic.eot');
   src: local('PT Serif Italic'), local('PTSerif-Italic'),
     url('/fonts/pt-serif-v11-latin-italic.eot?#iefix') format('embedded-opentype'),
@@ -31,6 +47,14 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
   src: url('/fonts/pt-sans-v11-latin-regular.eot');
   src: local('PT Sans'), local('PTSans-Regular'),
     url('/fonts/pt-sans-v11-latin-regular.eot?#iefix') format('embedded-opentype'),
@@ -45,6 +69,13 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
   src: url('/fonts/pt-sans-v11-latin-700.eot');
   src: local('PT Sans Bold'), local('PTSans-Bold'),
     url('/fonts/pt-sans-v11-latin-700.eot?#iefix') format('embedded-opentype'),

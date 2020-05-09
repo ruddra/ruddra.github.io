@@ -472,7 +472,7 @@ fieldset {
 }
 
 .toc li {
-  list-style: number;
+  list-style: decimal;
 }
 
 #TableOfContents ul li ul {

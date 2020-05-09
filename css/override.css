@@ -900,6 +900,10 @@ textarea {
   .photo-credit {
     margin-top: 0px;
   }
+
+  html {
+    line-height: 1.5;
+  }
 }
 
 @media (max-width: 30em) {

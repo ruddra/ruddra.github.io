@@ -906,7 +906,9 @@ textarea {
   .progress-bar {
     height: 0.3rem;
   }
-
+  .pagination-item {
+    min-height: 296px;
+  }
   .post .home-title {
     font-size: 32px;
   }
@@ -941,6 +943,11 @@ textarea {
 
   .post-date .generic-share {
     float: none;
+  }
+
+  .pagination-item {
+    font-size: 16px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
   }
 }
 

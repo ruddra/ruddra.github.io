@@ -3,6 +3,7 @@
   font-family: "Merriweather";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url("/fonts/merriweather-v21-latin-regular.eot");
   /* IE9 Compat Modes */
   src: local("Merriweather Regular"), local("Merriweather-Regular"),
@@ -25,6 +26,7 @@
   font-family: "Merriweather";
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: url("/fonts/merriweather-v21-latin-700.eot");
   /* IE9 Compat Modes */
   src: local("Merriweather Bold"), local("Merriweather-Bold"),
@@ -44,6 +46,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url("/fonts/pt-sans-v11-latin-regular.eot"); /* IE9 Compat Modes */
   src: local("PT Sans"), local("PTSans-Regular"),
     url("/fonts/pt-sans-v11-latin-regular.eot?#iefix")
@@ -62,6 +65,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: url("/fonts/pt-sans-v11-latin-700.eot"); /* IE9 Compat Modes */
   src: local("PT Sans Bold"), local("PTSans-Bold"),
     url("/fonts/pt-sans-v11-latin-700.eot?#iefix") format("embedded-opentype"),

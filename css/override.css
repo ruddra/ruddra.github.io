@@ -828,6 +828,10 @@ textarea {
 }
 
 @media screen and (max-width: 56em) {
+  body {
+    line-height: 1.5;
+  }
+
   .pagination-item {
     min-height: 358px;
   }
@@ -899,10 +903,6 @@ textarea {
 
   .photo-credit {
     margin-top: 0px;
-  }
-
-  html {
-    line-height: 1.5;
   }
 }
 

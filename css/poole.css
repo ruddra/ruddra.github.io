@@ -166,7 +166,7 @@ pre code {
 }
 
 .gist .gist-file {
-  font-family: Menlo, Monaco, "Courier New", monospace !important;
+  font-family: Menlo, Monaco, "Courier New", monospace ;
 }
 
 .gist .markdown-body {
@@ -179,7 +179,7 @@ pre code {
 }
 
 .gist .gist-file .gist-data {
-  font-size: 0.8rem !important;
+  font-size: 0.8rem ;
   line-height: 1.4;
 }
 

@@ -226,7 +226,7 @@
 .commento-root .commento-round-check .pitch {
   font-size: 14px;
   color: #a5a5a5;
-  line-height: 20px !important;
+  line-height: 20px ;
 }
 
 .commento-root input[type="text"],

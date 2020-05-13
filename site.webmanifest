@@ -1,7 +1,17 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Ruddra.com| Blog by Arnab Kumar Shil",
+    "short_name": "Ruddra",
     "icons": [
+        {
+            "src": "/favicon-16x16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
         {
             "src": "/android-chrome-192x192.png",
             "sizes": "192x192",
@@ -13,7 +23,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
+    "theme_color": "#000000",
     "background_color": "#ffffff",
     "display": "standalone"
 }

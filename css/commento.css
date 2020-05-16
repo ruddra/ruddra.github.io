@@ -10,9 +10,10 @@
 
 .commento-root * {
   font-size: 15px;
-  line-height: 1.5;
+  line-height: 1;
   color: #222222;
   text-rendering: optimizeLegibility;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
 
 .commento-root code {
@@ -226,7 +227,7 @@
 .commento-root .commento-round-check .pitch {
   font-size: 14px;
   color: #a5a5a5;
-  line-height: 20px ;
+  line-height: 20px;
 }
 
 .commento-root input[type="text"],
@@ -1114,15 +1115,10 @@
 }
 
 .commento-markdown {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
 }
 
 #commento-textarea-root {
   width: 99%;
-}
-
-.commento-subtitle {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }

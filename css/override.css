@@ -224,104 +224,120 @@ img {
   width: 1rem;
   height: 0.75rem;
   content: "";
-  background-image: -webkit-linear-gradient(to bottom,
-      #fff,
-      #fff 20%,
-      #555 20%,
-      #555 40%,
-      #fff 40%,
-      #fff 60%,
-      #555 60%,
-      #555 80%,
-      #fff 80%,
-      #fff 100%);
-  background-image: -moz-linear-gradient(to bottom,
-      #fff,
-      #fff 20%,
-      #555 20%,
-      #555 40%,
-      #fff 40%,
-      #fff 60%,
-      #555 60%,
-      #555 80%,
-      #fff 80%,
-      #fff 100%);
-  background-image: -ms-linear-gradient(to bottom,
-      #fff,
-      #fff 20%,
-      #555 20%,
-      #555 40%,
-      #fff 40%,
-      #fff 60%,
-      #555 60%,
-      #555 80%,
-      #fff 80%,
-      #fff 100%);
-  background-image: linear-gradient(to bottom,
-      #fff,
-      #fff 20%,
-      #555 20%,
-      #555 40%,
-      #fff 40%,
-      #fff 60%,
-      #555 60%,
-      #555 80%,
-      #fff 80%,
-      #fff 100%);
+  background-image: -webkit-linear-gradient(
+    to bottom,
+    #fff,
+    #fff 20%,
+    #555 20%,
+    #555 40%,
+    #fff 40%,
+    #fff 60%,
+    #555 60%,
+    #555 80%,
+    #fff 80%,
+    #fff 100%
+  );
+  background-image: -moz-linear-gradient(
+    to bottom,
+    #fff,
+    #fff 20%,
+    #555 20%,
+    #555 40%,
+    #fff 40%,
+    #fff 60%,
+    #555 60%,
+    #555 80%,
+    #fff 80%,
+    #fff 100%
+  );
+  background-image: -ms-linear-gradient(
+    to bottom,
+    #fff,
+    #fff 20%,
+    #555 20%,
+    #555 40%,
+    #fff 40%,
+    #fff 60%,
+    #555 60%,
+    #555 80%,
+    #fff 80%,
+    #fff 100%
+  );
+  background-image: linear-gradient(
+    to bottom,
+    #fff,
+    #fff 20%,
+    #555 20%,
+    #555 40%,
+    #fff 40%,
+    #fff 60%,
+    #555 60%,
+    #555 80%,
+    #fff 80%,
+    #fff 100%
+  );
 }
 
 .sidebar-toggle:active,
-#sidebar-checkbox:checked~.sidebar-toggle {
+#sidebar-checkbox:checked ~ .sidebar-toggle {
   color: rgba(255, 255, 255, 0.671);
   background-color: rgb(58, 57, 57);
 }
 
 .sidebar-toggle:active:before,
-#sidebar-checkbox:checked~.sidebar-toggle:before {
-  background-image: -webkit-linear-gradient(to bottom,
-      #fff,
-      #fff 20%,
-      #555 20%,
-      #555 40%,
-      #fff 40%,
-      #fff 60%,
-      #555 60%,
-      #555 80%,
-      #fff 80%,
-      #fff 100%);
-  background-image: -moz-linear-gradient(to bottom,
-      #fff,
-      #fff 20%,
-      #555 20%,
-      #555 40%,
-      #fff 40%,
-      #fff 60%,
-      #555 60%,
-      #555 80%,
-      #fff 80%,
-      #fff 100%);
-  background-image: -ms-linear-gradient(to bottom,
-      #fff,
-      #fff 20%,
-      #555 20%,
-      #555 40%,
-      #fff 40%,
-      #fff 60%,
-      #555 60%,
-      #555 80%,
-      #fff 80%,
-      #fff 100%);
-  background-image: linear-gradient(to bottom,
-      #fff,
-      #fff 20%,
-      #555 20%,
-      #555 40%,
-      #fff 40%,
-      #fff 60%,
-      #555 60%,
-      #555 80%,
-      #fff 80%,
-      #fff 100%);
+#sidebar-checkbox:checked ~ .sidebar-toggle:before {
+  background-image: -webkit-linear-gradient(
+    to bottom,
+    #fff,
+    #fff 20%,
+    #555 20%,
+    #555 40%,
+    #fff 40%,
+    #fff 60%,
+    #555 60%,
+    #555 80%,
+    #fff 80%,
+    #fff 100%
+  );
+  background-image: -moz-linear-gradient(
+    to bottom,
+    #fff,
+    #fff 20%,
+    #555 20%,
+    #555 40%,
+    #fff 40%,
+    #fff 60%,
+    #555 60%,
+    #555 80%,
+    #fff 80%,
+    #fff 100%
+  );
+  background-image: -ms-linear-gradient(
+    to bottom,
+    #fff,
+    #fff 20%,
+    #555 20%,
+    #555 40%,
+    #fff 40%,
+    #fff 60%,
+    #555 60%,
+    #555 80%,
+    #fff 80%,
+    #fff 100%
+  );
+  background-image: linear-gradient(
+    to bottom,
+    #fff,
+    #fff 20%,
+    #555 20%,
+    #555 40%,
+    #fff 40%,
+    #fff 60%,
+    #555 60%,
+    #555 80%,
+    #fff 80%,
+    #fff 100%
+  );
 }
 
 .comment-newsletters {
@@ -397,7 +413,8 @@ fieldset {
 }
 
 .commento-options:hover .onhover {
-  filter: invert(38%) sepia(1%) saturate(2184%) hue-rotate(23deg) brightness(97%) contrast(98%);
+  filter: invert(38%) sepia(1%) saturate(2184%) hue-rotate(23deg)
+    brightness(97%) contrast(98%);
 }
 
 .tag-class {
@@ -561,33 +578,40 @@ fieldset {
 .progress-bar {
   height: 0.2rem;
   background: rgb(100, 46, 204);
-  background: -moz-linear-gradient(90deg,
-      rgba(100, 46, 204, 1) 0%,
-      rgba(64, 38, 203, 1) 20%,
-      rgba(46, 114, 204, 1) 40%,
-      rgba(46, 183, 204, 1) 60%,
-      rgba(46, 204, 180, 1) 80%,
-      rgba(46, 204, 113, 1) 100%);
-  background: -webkit-linear-gradient(90deg,
-      rgba(100, 46, 204, 1) 0%,
-      rgba(64, 38, 203, 1) 20%,
-      rgba(46, 114, 204, 1) 40%,
-      rgba(46, 183, 204, 1) 60%,
-      rgba(46, 204, 180, 1) 80%,
-      rgba(46, 204, 113, 1) 100%);
-  background: linear-gradient(90deg,
-      rgba(100, 46, 204, 1) 0%,
-      rgba(64, 38, 203, 1) 20%,
-      rgba(46, 114, 204, 1) 40%,
-      rgba(46, 183, 204, 1) 60%,
-      rgba(46, 204, 180, 1) 80%,
-      rgba(46, 204, 113, 1) 100%);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(100, 46, 204, 1) 0%,
+    rgba(64, 38, 203, 1) 20%,
+    rgba(46, 114, 204, 1) 40%,
+    rgba(46, 183, 204, 1) 60%,
+    rgba(46, 204, 180, 1) 80%,
+    rgba(46, 204, 113, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(100, 46, 204, 1) 0%,
+    rgba(64, 38, 203, 1) 20%,
+    rgba(46, 114, 204, 1) 40%,
+    rgba(46, 183, 204, 1) 60%,
+    rgba(46, 204, 180, 1) 80%,
+    rgba(46, 204, 113, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(100, 46, 204, 1) 0%,
+    rgba(64, 38, 203, 1) 20%,
+    rgba(46, 114, 204, 1) 40%,
+    rgba(46, 183, 204, 1) 60%,
+    rgba(46, 204, 180, 1) 80%,
+    rgba(46, 204, 113, 1) 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#642ecc", endColorstr="#2ecc71", GradientType=1);
   width: 0%;
 }
 
 /* Privacy */
 #snackbar {
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
   visibility: hidden;
   min-width: 250px;
   margin: auto;
@@ -723,9 +747,11 @@ fieldset {
   height: 50px;
   border-style: solid;
   border-color: #1971c2;
-  border-image: linear-gradient(45deg,
-      rgba(100, 57, 242, 1) 0%,
-      rgba(242, 55, 55, 1) 100%);
+  border-image: linear-gradient(
+    45deg,
+    rgba(100, 57, 242, 1) 0%,
+    rgba(242, 55, 55, 1) 100%
+  );
   border-image-slice: 9;
   border-top-color: transparent;
   border-width: 4px;

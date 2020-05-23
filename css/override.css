@@ -326,6 +326,7 @@ img {
 #sidebar-checkbox:checked~.sidebar-toggle {
   color: #555;
   background-color: #fff;
+  border-color: #555;
 }
 
 .comment-newsletters {

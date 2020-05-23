@@ -9,11 +9,7 @@
 }
 
 .commento-root * {
-  font-size: 15px;
-  line-height: 1.2rem;
   color: #222222;
-  text-rendering: optimizeLegibility;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
 
 .commento-root code {
@@ -447,7 +443,13 @@
 }
 
 .commento-root .commento-card .commento-header {
-  padding-bottom: 4px;
+  font-family: "PT Sans",
+    Georgia,
+    'Times New Roman',
+    Times,
+    serif;
+  line-height: 1.5;
+  margin-bottom: 14px;
 }
 
 .commento-root .commento-card .commento-avatar::after {
@@ -925,4 +927,8 @@
 
 #commento-textarea-root {
   width: 99%;
+}
+
+.commento-comment-text {
+  font-size: 14px;
 }

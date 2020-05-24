@@ -150,10 +150,10 @@ img {
 
 .photo-credit {
   text-align: center;
-  margin-bottom: 5px;
-  margin-top: -5px;
+  margin-bottom: 3px;
+  margin-top: -10px;
   color: #9a9a9a;
-  font-size: 15px;
+  font-size: 12px;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
 
@@ -836,6 +836,10 @@ amp-img img {
   .side-share {
     margin-left: -20em;
   }
+
+  .photo-credit {
+    margin-top: -25px;
+  }
 }
 
 @media screen and (max-width: 48em) {
@@ -899,8 +903,9 @@ amp-img img {
   }
 
   .photo-credit {
-    margin-top: 0px;
+    margin-top: -10px;
   }
+
 }
 
 @media (max-width: 30em) {
@@ -951,6 +956,10 @@ amp-img img {
   .pagination-item {
     font-size: 16px;
     padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+
+  .photo-credit {
+    margin-top: -8px;
   }
 }
 

@@ -605,7 +605,6 @@ fieldset {
   position: fixed;
   z-index: 1000;
   bottom: 30px;
-  font-family: ;
   font-size: 13px;
   left: 50%;
   transform: translateX(-50%);
@@ -904,6 +903,11 @@ amp-img img {
 
   .photo-credit {
     margin-top: -10px;
+  }
+
+  .sidebar-toggle {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
   }
 
 }

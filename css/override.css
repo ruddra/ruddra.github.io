@@ -806,6 +806,11 @@ textarea {
   font-family: "PT Sans";
 }
 
+.rss-feed {
+  margin-bottom: -1px;
+  fill: rgba(255, 255, 255, 0.6);
+}
+
 /*AMP*/
 amp-img img {
   object-fit: contain;

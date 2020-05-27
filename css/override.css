@@ -96,9 +96,6 @@ h4:hover a {
     max-width: 100%;
 }
 
-.tag-list-header {
-    margin-top: -4%;
-}
 
 .sidebar-icons a:hover {
     text-decoration: none;
@@ -403,18 +400,6 @@ fieldset {
 
 .commento-options:hover .onhover {
     filter: invert(38%) sepia(1%) saturate(2184%) hue-rotate(23deg) brightness(97%) contrast(98%);
-}
-
-.tag-class {
-    border-radius: 2px;
-    color: rgba(0, 0, 0, 0.562);
-    font-weight: 400;
-    background-color: #d3d3d3;
-    font-size: 16px;
-    font-weight: 400;
-    padding: 3px;
-    margin: 2px;
-    font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
 
 .post-date {
@@ -817,10 +802,6 @@ amp-img img {
 }
 
 /* Tag links */
-.tag-links {
-    font-size: 12px;
-}
-
 .tag-links-a {
     color: #736d6d;
 }

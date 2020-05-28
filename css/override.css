@@ -731,11 +731,18 @@ fieldset {
 }
 
 .newsletter-header {
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .newsletter-txt {
     padding-bottom: 14px;
+    font-size: 14px;
+}
+
+.amp-comment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Share */

@@ -137,6 +137,7 @@ pre {
     border-radius: 0;
     width: 100%;
     align-self: center;
+    min-height: 192px;
 }
 
 img {

@@ -137,7 +137,7 @@ pre {
     border-radius: 0;
     width: 100%;
     align-self: center;
-    min-height: 192px;
+    min-height: 324px;
 }
 
 img {
@@ -828,6 +828,12 @@ amp-img img {
 }
 
 @media screen and (max-width: 56em) {
+
+    .img-container img,
+    .img-container amp-img {
+        min-height: 270px;
+    }
+
     body {
         line-height: 1.5;
     }
@@ -846,6 +852,12 @@ amp-img img {
 }
 
 @media screen and (max-width: 48em) {
+
+    .img-container img,
+    .img-container amp-img {
+        min-height: 234px;
+    }
+
     .side-share {
         display: none;
     }
@@ -931,6 +943,11 @@ amp-img img {
 
     .pagination-item {
         min-height: 296px;
+    }
+
+    .img-container img,
+    .img-container amp-img {
+        min-height: 192px;
     }
 
     .post .home-title {

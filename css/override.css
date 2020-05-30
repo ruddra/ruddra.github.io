@@ -139,6 +139,20 @@ pre {
   align-self: center;
 }
 
+.page-img-container {
+  overflow: hidden;
+  margin-bottom: 20px;
+  display: flex;
+  max-width: 100%;
+}
+
+.page-img-container img,
+.page-img-container amp-img {
+  border-radius: 0;
+  width: 100%;
+  align-self: center;
+}
+
 img {
   display: block;
   margin-left: auto;

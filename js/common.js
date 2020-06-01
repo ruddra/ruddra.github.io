@@ -129,13 +129,20 @@ function toggleMarkDownTable() {
 
 function showPrivacy() {
   if (localStorage.getItem("cookieSeen") != "shown") {
-    var x = document.getElementById("snackbar");
-    x.className = "show";
-    localStorage.setItem("cookieSeen", "shown")
+    setTimeout(() => {
+      showPrivacyPopup()
+    }, 5000);
   }
 }
 
-showPrivacy();
+showPrivacy()
+
+function showPrivacyPopup() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  localStorage.setItem("cookieSeen", "shown")
+}
+
 
 function closePrivacy() {
   var fadeTarget = document.getElementById("snackbar");

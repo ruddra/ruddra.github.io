@@ -7,10 +7,6 @@
     text-decoration: underline;
 }
 
-.pull-right {
-    float: right;
-}
-
 .pull-right a {
     color: #9a9a9a;
 }
@@ -163,14 +159,6 @@ img {
     margin-right: auto;
 }
 
-.photo-credit {
-    text-align: center;
-    margin-bottom: 3px;
-    margin-top: -10px;
-    color: #736d6d;
-    font-size: 12px;
-    font-family: "PT Sans", Helvetica, Arial, sans-serif;
-}
 
 .highlight {
     position: relative;
@@ -200,14 +188,6 @@ img {
     background-color: #666;
 }
 
-.search-form {
-    max-height: 41px;
-    display: none;
-    width: 108%;
-    margin-bottom: 2px;
-    font-weight: 200;
-}
-
 .sidebar-toggle {
     border-style: solid;
     border-width: 1px;
@@ -216,77 +196,6 @@ img {
 
 .masthead {
     background: #202020;
-}
-
-.masthead-search-form {
-    margin-top: -30px;
-    font-weight: 200;
-}
-
-.sidebar-toggle {
-    position: fixed;
-    top: 0.8rem;
-    left: 1rem;
-    display: block;
-    padding-left: 0.6rem;
-    padding-right: 0.6rem;
-    padding-top: 0.25rem;
-    padding-bottom: 0.15rem;
-    color: #fff;
-    background-color: #555;
-    border-radius: 0.25rem;
-    cursor: pointer;
-}
-
-.sidebar-toggle:before {
-    display: inline-block;
-    width: 1rem;
-    height: 0.75rem;
-    content: "";
-    background-image: -webkit-linear-gradient(to bottom,
-            #fff,
-            #fff 20%,
-            #555 20%,
-            #555 40%,
-            #fff 40%,
-            #fff 60%,
-            #555 60%,
-            #555 80%,
-            #fff 80%,
-            #fff 100%);
-    background-image: -moz-linear-gradient(to bottom,
-            #fff,
-            #fff 20%,
-            #555 20%,
-            #555 40%,
-            #fff 40%,
-            #fff 60%,
-            #555 60%,
-            #555 80%,
-            #fff 80%,
-            #fff 100%);
-    background-image: -ms-linear-gradient(to bottom,
-            #fff,
-            #fff 20%,
-            #555 20%,
-            #555 40%,
-            #fff 40%,
-            #fff 60%,
-            #555 60%,
-            #555 80%,
-            #fff 80%,
-            #fff 100%);
-    background-image: linear-gradient(to bottom,
-            #fff,
-            #fff 20%,
-            #555 20%,
-            #555 40%,
-            #fff 40%,
-            #fff 60%,
-            #555 60%,
-            #555 80%,
-            #fff 80%,
-            #fff 100%);
 }
 
 .sidebar-toggle:active:before,
@@ -420,10 +329,6 @@ fieldset {
     filter: invert(38%) sepia(1%) saturate(2184%) hue-rotate(23deg) brightness(97%) contrast(98%);
 }
 
-.post-date {
-    color: #736d6d;
-}
-
 .commento-root h1 {
     font-weight: 800;
 }
@@ -501,53 +406,8 @@ fieldset {
     background: #000000;
 }
 
-.tftextinput {
-    height: 28px;
-    border-radius: 2px;
-    font-size: 20px;
-    border-style: none;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    max-width: 200px;
-    margin-right: 2px;
-    padding-right: 29px;
-}
-
-.tfbutton {
-    margin: 0;
-    padding-right: 25px;
-    font-size: 14px;
-    outline: none;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    margin-top: -10px;
-    margin-left: -37px;
-    background: transparent;
-    border: none;
-}
-
-.tfbutton svg {
-    padding-top: 4px;
-    margin-bottom: -4px;
-    margin-right: -20px;
-}
-
-.tfbutton svg:hover {
-    fill: #6e6f70;
-}
-
-/* Fixes submit button height problem in Firefox */
-.tfbutton::-moz-focus-inner {
-    border: 0;
-}
-
 .tfclear {
     clear: both;
-}
-
-.post .home-title {
-    font-size: 32px;
 }
 
 .progress-container {
@@ -592,25 +452,6 @@ fieldset {
             rgba(46, 204, 113, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#642ecc", endColorstr="#2ecc71", GradientType=1);
     width: 0%;
-}
-
-/* Privacy */
-#snackbar {
-    font-family: "PT Sans", Helvetica, Arial, sans-serif;
-    visibility: hidden;
-    min-width: 250px;
-    margin: auto;
-    background-color: #333333;
-    color: #ffffff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 10px;
-    position: fixed;
-    z-index: 1000;
-    bottom: 30px;
-    font-size: 13px;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 #snackbar.show {
@@ -681,6 +522,7 @@ fieldset {
 #close-privacy:hover {
     opacity: 1;
 }
+
 
 #newsletter-submitted p {
     text-align: center;
@@ -768,21 +610,6 @@ fieldset {
 }
 
 /* Share */
-
-.generic-share {
-    float: none;
-    display: none;
-    padding-top: 3px;
-}
-
-.generic-share .tw-share {
-    padding-left: 5px;
-}
-
-.generic-share .ln-share {
-    padding-left: 5px;
-}
-
 .generic-share a:hover {
     text-decoration: none;
 }
@@ -815,7 +642,6 @@ textarea {
 }
 
 #list,
-.post-date,
 .commento-name {
     font-family: "PT Sans";
 }
@@ -828,11 +654,6 @@ textarea {
 /*AMP*/
 amp-img img {
     object-fit: contain;
-}
-
-/* Tag links */
-.tag-links-a {
-    color: #736d6d;
 }
 
 /* mobile display */

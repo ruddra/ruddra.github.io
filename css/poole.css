@@ -1,3 +1,38 @@
+@font-face {
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/fonts/merriweather-v21-latin-regular.eot");
+    /* IE9 Compat Modes */
+    src: local("Merriweather Regular"), local("Merriweather-Regular"),
+        url("/fonts/merriweather-v21-latin-regular.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("/fonts/merriweather-v21-latin-regular.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("/fonts/merriweather-v21-latin-regular.woff") format("woff"),
+        /* Modern Browsers */
+        url("/fonts/merriweather-v21-latin-regular.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("/fonts/merriweather-v21-latin-regular.svg#Merriweather") format("svg");
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/fonts/pt-sans-v11-latin-regular.eot");
+    src: local("PT Sans"), local("PTSans-Regular"),
+        url("/fonts/pt-sans-v11-latin-regular.eot?#iefix") format("embedded-opentype"),
+        url("/fonts/pt-sans-v11-latin-regular.woff2") format("woff2"),
+        url("/fonts/pt-sans-v11-latin-regular.woff") format("woff"),
+        url("/fonts/pt-sans-v11-latin-regular.ttf") format("truetype"),
+        url("/fonts/pt-sans-v11-latin-regular.svg#PTSans") format("svg");
+}
+
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -44,10 +79,12 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: "PT Sans", Helvetica, Arial, sans-serif;
     margin-bottom: 0.5rem;
-    font-weight: bold;
     line-height: 1.25;
-    color: #313131;
+    letter-spacing: -.025rem;
+    color: #303030;
+    font-weight: 400;
 }
 
 h1 {
@@ -250,12 +287,14 @@ tbody tr:nth-child(odd) th {
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-bottom: 3rem;
+    background: #202020;
 }
 
 .masthead-title {
     margin-top: 0;
     margin-bottom: 0;
     color: #505050;
+    font-size: 20px;
 }
 
 .masthead-title a {
@@ -289,7 +328,8 @@ tbody tr:nth-child(odd) th {
     display: block;
     margin-top: -0.5rem;
     margin-bottom: 0.5rem;
-    color: #9a9a9a;
+    color: #736d6d;
+    font-family: "PT Sans";
 }
 
 .related {
@@ -315,6 +355,10 @@ tbody tr:nth-child(odd) th {
 .related-posts li a:hover {
     color: #268bd2;
     text-decoration: none;
+}
+
+.tag-links-a {
+    color: #736d6d;
 }
 
 .related-posts li a:hover small {
@@ -343,6 +387,210 @@ a.pagination-item:hover {
     background-color: #f5f5f5;
 }
 
+/* Override */
+#snackbar {
+    font-family: "PT Sans", Helvetica, Arial, sans-serif;
+    visibility: hidden;
+    min-width: 250px;
+    margin: auto;
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    position: fixed;
+    z-index: 1000;
+    bottom: 30px;
+    font-size: 13px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sidebar-checkbox {
+    position: absolute;
+    opacity: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -14rem;
+    width: 14rem;
+    visibility: hidden;
+    overflow-y: auto;
+    font-family: "PT Sans", Helvetica, Arial, sans-serif;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #202020;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar-toggle {
+    position: absolute;
+    top: 0.8rem;
+    left: 1rem;
+    display: block;
+    padding: 0.25rem 0.75rem;
+    color: #505050;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    line-height: 1.5;
+}
+
+.sidebar-toggle {
+    position: fixed;
+    top: 0.8rem;
+    left: 1rem;
+    display: block;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.15rem;
+    color: #fff;
+    background-color: #555;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.sidebar-toggle:before {
+    display: inline-block;
+    width: 1rem;
+    height: 0.75rem;
+    content: "";
+    background-image: -webkit-linear-gradient(to bottom,
+            #fff,
+            #fff 20%,
+            #555 20%,
+            #555 40%,
+            #fff 40%,
+            #fff 60%,
+            #555 60%,
+            #555 80%,
+            #fff 80%,
+            #fff 100%);
+    background-image: -moz-linear-gradient(to bottom,
+            #fff,
+            #fff 20%,
+            #555 20%,
+            #555 40%,
+            #fff 40%,
+            #fff 60%,
+            #555 60%,
+            #555 80%,
+            #fff 80%,
+            #fff 100%);
+    background-image: -ms-linear-gradient(to bottom,
+            #fff,
+            #fff 20%,
+            #555 20%,
+            #555 40%,
+            #fff 40%,
+            #fff 60%,
+            #555 60%,
+            #555 80%,
+            #fff 80%,
+            #fff 100%);
+    background-image: linear-gradient(to bottom,
+            #fff,
+            #fff 20%,
+            #555 20%,
+            #555 40%,
+            #fff 40%,
+            #fff 60%,
+            #555 60%,
+            #555 80%,
+            #fff 80%,
+            #fff 100%);
+}
+
+.search-form {
+    max-height: 41px;
+    display: none;
+    width: 108%;
+    margin-bottom: 2px;
+    font-weight: 200;
+}
+
+
+.masthead-search-form {
+    margin-top: -28px;
+    font-weight: 200;
+}
+
+.pull-right {
+    float: right;
+}
+
+.tftextinput {
+    height: 28px;
+    border-radius: 2px;
+    font-size: 20px;
+    border-style: none;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    max-width: 200px;
+    margin-right: 2px;
+    padding-right: 29px;
+}
+
+.tfbutton {
+    margin: 0;
+    padding-right: 25px;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    margin-top: -10px;
+    margin-left: -37px;
+    background: transparent;
+    border: none;
+}
+
+.tfbutton svg {
+    padding-top: 4px;
+    margin-bottom: -2px;
+    margin-right: -20px;
+}
+
+.tfbutton svg:hover {
+    fill: #6e6f70;
+}
+
+/* Fixes submit button height problem in Firefox */
+.tfbutton::-moz-focus-inner {
+    border: 0;
+}
+
+.wrap,
+.sidebar,
+.sidebar-toggle {
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.post .home-title {
+    font-size: 32px;
+}
+
+.photo-credit {
+    text-align: center;
+    margin-bottom: 3px;
+    margin-top: -10px;
+    color: #736d6d;
+    font-size: 12px;
+    font-family: "PT Sans", Helvetica, Arial, sans-serif;
+}
+
+
+
 @media (min-width: 30em) {
     .pagination {
         margin: 3rem 0;
@@ -364,4 +612,42 @@ a.pagination-item:hover {
         border-top-right-radius: 4px;
         border-bottom-right-radius: 4px;
     }
+}
+
+
+@media screen and (max-width: 48em) {
+    .masthead-search-form {
+        display: none;
+    }
+
+    .pull-right {
+        display: none;
+    }
+
+    .sidebar-icons {
+        margin-top: -5%;
+        margin-bottom: -5%;
+    }
+
+    .masthead-title {
+        text-align: center;
+    }
+
+    .masthead-title small {
+        display: inline-block;
+    }
+
+    .img-container {
+        margin-bottom: 0;
+    }
+
+    .sidebar-toggle {
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+    }
+
+    .photo-credit {
+        margin-top: 0px;
+    }
+
 }

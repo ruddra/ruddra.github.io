@@ -4,18 +4,12 @@
     font-weight: 400;
     font-display: swap;
     src: url("/fonts/merriweather-v21-latin-regular.eot");
-    /* IE9 Compat Modes */
     src: local("Merriweather Regular"), local("Merriweather-Regular"),
         url("/fonts/merriweather-v21-latin-regular.eot?#iefix") format("embedded-opentype"),
-        /* IE6-IE8 */
         url("/fonts/merriweather-v21-latin-regular.woff2") format("woff2"),
-        /* Super Modern Browsers */
         url("/fonts/merriweather-v21-latin-regular.woff") format("woff"),
-        /* Modern Browsers */
         url("/fonts/merriweather-v21-latin-regular.ttf") format("truetype"),
-        /* Safari, Android, iOS */
         url("/fonts/merriweather-v21-latin-regular.svg#Merriweather") format("svg");
-    /* Legacy iOS */
 }
 
 @font-face {
@@ -31,7 +25,6 @@
         url("/fonts/pt-sans-v11-latin-regular.ttf") format("truetype"),
         url("/fonts/pt-sans-v11-latin-regular.svg#PTSans") format("svg");
 }
-
 
 * {
     -webkit-box-sizing: border-box;
@@ -64,15 +57,6 @@ a {
     text-decoration: none;
 }
 
-a strong {
-    color: inherit;
-}
-
-a:hover,
-a:focus {
-    text-decoration: underline;
-}
-
 h1,
 h2,
 h3,
@@ -96,18 +80,6 @@ h2 {
     font-size: 1.5rem;
 }
 
-h3 {
-    margin-top: 1.5rem;
-    font-size: 1.25rem;
-}
-
-h4,
-h5,
-h6 {
-    margin-top: 1rem;
-    font-size: 1rem;
-}
-
 p {
     margin-top: 0;
     margin-bottom: 1rem;
@@ -115,109 +87,6 @@ p {
 
 strong {
     color: #303030;
-}
-
-ul,
-ol,
-dl {
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
-
-dt {
-    font-weight: bold;
-}
-
-dd {
-    margin-bottom: 0.5rem;
-}
-
-hr {
-    position: relative;
-    margin: 1.5rem 0;
-    border: 0;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #fff;
-}
-
-abbr {
-    font-size: 85%;
-    font-weight: bold;
-    color: #555;
-    text-transform: uppercase;
-}
-
-abbr[title] {
-    cursor: help;
-    border-bottom: 1px dotted #e5e5e5;
-}
-
-code,
-pre {
-    font-family: Menlo, Monaco, "Courier New", monospace;
-}
-
-code {
-    padding: 0.25em 0.5em;
-    font-size: 85%;
-    color: #bf616a;
-    background-color: #f9f9f9;
-    border-radius: 3px;
-}
-
-pre {
-    display: block;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    font-size: 0.8rem;
-    line-height: 1.4;
-    white-space: pre;
-    white-space: pre-wrap;
-    word-break: break-all;
-    word-wrap: break-word;
-    background-color: #f9f9f9;
-}
-
-pre code {
-    padding: 0;
-    font-size: 100%;
-    color: inherit;
-    background-color: transparent;
-}
-
-.highlight {
-    margin-bottom: 1rem;
-    border-radius: 4px;
-}
-
-.highlight pre {
-    margin-bottom: 0;
-}
-
-.gist .gist-file {
-    font-family: Menlo, Monaco, "Courier New", monospace;
-}
-
-.gist .markdown-body {
-    padding: 15px;
-}
-
-.gist pre {
-    padding: 0;
-    background-color: transparent;
-}
-
-.gist .gist-file .gist-data {
-    font-size: 0.8rem;
-    line-height: 1.4;
-}
-
-.gist code {
-    padding: 0;
-    color: inherit;
-    background-color: transparent;
-    border-radius: 0;
 }
 
 blockquote {
@@ -243,24 +112,6 @@ img {
     max-width: 100%;
     margin: 0 0 1rem;
     border-radius: 5px;
-}
-
-table {
-    margin-bottom: 1rem;
-    width: 100%;
-    border: 1px solid #e5e5e5;
-    border-collapse: collapse;
-}
-
-td,
-th {
-    padding: 0.25rem 0.5rem;
-    border: 1px solid #e5e5e5;
-}
-
-tbody tr:nth-child(odd) td,
-tbody tr:nth-child(odd) th {
-    background-color: #f9f9f9;
 }
 
 .lead {
@@ -562,6 +413,11 @@ textarea {
     font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
 
+.wrap {
+    position: relative;
+    width: 100%;
+}
+
 .wrap,
 .sidebar,
 .sidebar-toggle {
@@ -600,29 +456,6 @@ textarea {
     border-radius: 0;
     width: 100%;
     align-self: center;
-}
-
-@media (min-width: 30em) {
-    .pagination {
-        margin: 3rem 0;
-    }
-
-    .pagination-item {
-        float: left;
-        width: 50%;
-    }
-
-    .pagination-item:first-child {
-        margin-bottom: 0;
-        border-top-left-radius: 4px;
-        border-bottom-left-radius: 4px;
-    }
-
-    .pagination-item:last-child {
-        margin-left: -1px;
-        border-top-right-radius: 4px;
-        border-bottom-right-radius: 4px;
-    }
 }
 
 .ln-share,
@@ -668,5 +501,4 @@ textarea {
     .photo-credit {
         margin-top: 0px;
     }
-
 }

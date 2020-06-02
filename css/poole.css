@@ -327,7 +327,6 @@ tbody tr:nth-child(odd) th {
 .post-date {
     display: block;
     margin-top: -0.5rem;
-    margin-bottom: 0.5rem;
     color: #736d6d;
     font-family: "PT Sans";
 }
@@ -555,7 +554,7 @@ a.pagination-item:hover {
 
 .tfbutton svg {
     padding-top: 4px;
-    margin-bottom: -2px;
+    margin-bottom: -4px;
     margin-right: -20px;
 }
 
@@ -566,6 +565,13 @@ a.pagination-item:hover {
 /* Fixes submit button height problem in Firefox */
 .tfbutton::-moz-focus-inner {
     border: 0;
+}
+
+input,
+button,
+label,
+textarea {
+    font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
 
 .wrap,
@@ -589,7 +595,24 @@ a.pagination-item:hover {
     font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
 
+.post p {
+    text-align: justify;
+}
 
+.img-container {
+    overflow: hidden;
+    max-height: 350px;
+    margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+}
+
+.img-container img,
+.img-container amp-img {
+    border-radius: 0;
+    width: 100%;
+    align-self: center;
+}
 
 @media (min-width: 30em) {
     .pagination {

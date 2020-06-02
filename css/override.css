@@ -11,10 +11,6 @@
     color: #9a9a9a;
 }
 
-.post p {
-    text-align: justify;
-}
-
 .side-share {
     position: fixed;
     top: 42%;
@@ -105,10 +101,6 @@ h4:hover a {
     text-decoration: none;
 }
 
-.pull-right svg {
-    margin-bottom: -2px;
-}
-
 .language-json .err {
     background-color: transparent;
     color: #9a9a9a;
@@ -122,21 +114,6 @@ h4:hover a {
 pre {
     white-space: pre;
     overflow: auto;
-}
-
-.img-container {
-    overflow: hidden;
-    max-height: 350px;
-    margin-bottom: 20px;
-    display: flex;
-    width: 100%;
-}
-
-.img-container img,
-.img-container amp-img {
-    border-radius: 0;
-    width: 100%;
-    align-self: center;
 }
 
 .page-img-container {
@@ -619,13 +596,6 @@ fieldset {
 }
 
 /* New implementation */
-
-input,
-button,
-label,
-textarea {
-    font-family: "PT Sans", Helvetica, Arial, sans-serif;
-}
 
 .pagination-text {
     line-height: 1.5rem;

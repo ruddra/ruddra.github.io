@@ -3,11 +3,6 @@ body {
     overflow-x: hidden;
 }
 
-html {
-    font-family: Merriweather, Georgia, "Times New Roman", serif;
-    text-rendering: optimizeSpeed;
-}
-
 h1,
 h2,
 h3,

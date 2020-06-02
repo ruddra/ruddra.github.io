@@ -139,15 +139,9 @@ function toggleMarkDownTable() {
   }
 }
 
-function sleep(ms, fn) {
-  return setTimeout(function () {
-    fn();
-  }, ms);
-}
-
 function showPrivacy() {
   if (localStorage.getItem("cookieSeen") != "shown") {
-    sleep(5000, showPrivacyPopup);
+    showPrivacyPopup();
   }
 }
 

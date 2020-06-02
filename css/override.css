@@ -581,6 +581,10 @@ fieldset {
 }
 
 /* Share */
+.generic-share {
+    float: right;
+}
+
 .generic-share a:hover {
     text-decoration: none;
 }
@@ -731,10 +735,6 @@ amp-img img {
 
     .commento-logged-container {
         margin-top: 10px;
-    }
-
-    .post-date .generic-share {
-        float: none;
     }
 
     .pagination-item {

@@ -435,26 +435,14 @@ a.pagination-item:hover {
     left: 1rem;
     display: block;
     padding: 0.25rem 0.75rem;
-    color: #505050;
-    background-color: #fff;
     border-radius: 0.25rem;
     cursor: pointer;
     line-height: 1.5;
-}
-
-.sidebar-toggle {
-    position: fixed;
-    top: 0.8rem;
-    left: 1rem;
-    display: block;
-    padding-left: 0.6rem;
-    padding-right: 0.6rem;
-    padding-top: 0.25rem;
-    padding-bottom: 0.15rem;
     color: #fff;
     background-color: #555;
-    border-radius: 0.25rem;
-    cursor: pointer;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #555;
 }
 
 .sidebar-toggle:before {
@@ -645,6 +633,10 @@ textarea {
 @media screen and (max-width: 48em) {
     .masthead-search-form {
         display: none;
+    }
+
+    .tfbutton svg {
+        margin-bottom: -3px;
     }
 
     .pull-right {

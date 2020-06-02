@@ -165,12 +165,6 @@ img {
     background-color: #666;
 }
 
-.sidebar-toggle {
-    border-style: solid;
-    border-width: 1px;
-    border-color: #555;
-}
-
 .masthead {
     background: #202020;
 }
@@ -682,10 +676,6 @@ amp-img img {
         letter-spacing: 0.2px;
     }
 
-    .masthead-search-form {
-        display: none;
-    }
-
     .search-form {
         display: block;
     }
@@ -698,43 +688,6 @@ amp-img img {
         padding-right: 29px;
     }
 
-    .tfbutton svg {
-        margin-bottom: -3px;
-    }
-
-    .pull-right {
-        display: none;
-    }
-
-    .sidebar-icons {
-        margin-top: -5%;
-        margin-bottom: -5%;
-    }
-
-    .masthead-title {
-        text-align: center;
-    }
-
-    .masthead-title small {
-        display: inline-block;
-    }
-
-    .img-container {
-        margin-bottom: 0;
-    }
-
-    .photo-credit {
-        margin-top: -10px;
-    }
-
-    .sidebar-toggle {
-        padding-top: 0.2rem;
-        padding-bottom: 0.2rem;
-    }
-
-    .photo-credit {
-        margin-top: 0px;
-    }
 
 }
 

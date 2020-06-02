@@ -3,6 +3,10 @@
     padding-right: 2%;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 .pull-right {
     float: right;
 }

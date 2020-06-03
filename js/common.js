@@ -169,7 +169,7 @@ function closePrivacy() {
 document.getElementById("close-privacy").addEventListener('click', closePrivacy);
 
 function increaseLikeCounter() {
-  var counters = document.querySelectorAll("#like-count");
+  var counters = document.querySelectorAll(".like-count");
 
   for (var i = 0; i < counters.length; i++) {
     var counter = counters[i];
@@ -179,7 +179,7 @@ function increaseLikeCounter() {
     counter.innerText = value;
   }
 
-  var target_share = document.querySelectorAll("#loved-count");
+  var target_share = document.querySelectorAll(".loved-count");
 
   for (var i = 0; i < target_share.length; i++) {
     target_share[i].style.color = "#2c4fff";
@@ -267,14 +267,14 @@ function storeLiked() {
 }
 
 function makeRed() {
-  var target_share = document.querySelectorAll("#love-share-sign");
+  var target_share = document.querySelectorAll(".love-share-sign");
   for (var i = 0; i < target_share.length; i++) {
     target_share[i].style.fill = "red";
   }
 }
 
 function makePink() {
-  var target_share = document.querySelectorAll("#love-share-sign");
+  var target_share = document.querySelectorAll(".love-share-sign");
   for (var i = 0; i < target_share.length; i++) {
     target_share[i].style.fill = "#ff8fc7";
   }

@@ -634,6 +634,10 @@ amp-img img {
     .tfbutton svg {
         margin-bottom: -3px;
     }
+
+    .side-share {
+        top: 30%
+    }
 }
 
 @media screen and (max-width: 56em) {

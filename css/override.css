@@ -484,14 +484,11 @@ fieldset {
 
 #close-privacy {
     cursor: pointer;
-    color: #ffffff;
-    padding-left: 2px;
-    font-size: 10px;
-    opacity: 0.9;
+    text-decoration: underline;
 }
 
 #close-privacy:hover {
-    opacity: 1;
+    font-weight: bold;
 }
 
 
@@ -590,7 +587,7 @@ fieldset {
 }
 
 .container a code {
-    color: #618abf;
+    color: #3f73b7;
 }
 
 /* New implementation */

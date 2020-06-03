@@ -40,7 +40,7 @@ h2 {
 }
 
 a {
-    color: #268bd2;
+    color: #0f56b0;
 }
 
 p {
@@ -137,7 +137,7 @@ img {
 }
 
 .tag-links-a {
-    color: #736d6d;
+    color: #5e5757;
 }
 
 .related-posts li a:hover small {
@@ -162,6 +162,10 @@ img {
     font-size: 13px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+#snackbar a {
+    color: rgb(63, 196, 255);
 }
 
 .sidebar-checkbox {
@@ -317,7 +321,7 @@ pre {
 code {
     padding: 0.25em 0.5em;
     font-size: 85%;
-    color: #bf616a;
+    color: #b94550;
     background-color: #f9f9f9;
     border-radius: 3px;
 }

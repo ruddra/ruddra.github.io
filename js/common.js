@@ -140,17 +140,25 @@ function toggleMarkDownTable() {
 }
 
 function showPrivacy() {
-  if (localStorage.getItem("cookieSeen") != "shown") {
-    showPrivacyPopup();
-  }
+  setTimeout(function () {
+    if (localStorage.getItem("cookieSeen") != "shown") {
+      showPrivacyPopup();
+      localStorage.setItem("cookieSeen", "shown");
+    }
+    sendGAAnalytics();
+  }, 5000)
 }
 
 showPrivacy();
+function sendGAAnalytics() {
+  window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+  ga('create', 'UA-58095062-1', 'auto');
+  ga('send', 'pageview');
+}
 
 function showPrivacyPopup() {
   var x = document.getElementById("snackbar");
   x.className = "show";
-  localStorage.setItem("cookieSeen", "shown");
 }
 
 function closePrivacy() {

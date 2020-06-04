@@ -1,5 +1,4 @@
 "use strict";
-
 var observer = lozad();
 observer.observe();
 
@@ -65,30 +64,8 @@ function updateForm() {
 }
 
 function getCode() {
-  var code;
-
-  if (!URLSearchParams) {
-    var getUrlParams = function getUrlParams() {
-      var result = {};
-      var params = (window.location.search.split('?')[1] || '').split('&');
-
-      for (var param in params) {
-        if (params.hasOwnProperty(param)) {
-          var paramParts = params[param].split('=');
-          result[paramParts[0]] = decodeURIComponent(paramParts[1] || "");
-        }
-      }
-
-      return result;
-    };
-
-    code = getUrlParams().code;
-  } else {
-    var urlParams = new URLSearchParams(window.location.search);
-    code = urlParams.get('code');
-  }
-
-  return code;
+  var urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get('code');
 }
 
 function submitComment(event) {
@@ -142,31 +119,16 @@ function toggleMarkDownTable() {
 function showPrivacy() {
   setTimeout(function () {
     if (localStorage.getItem("cookieSeen") != "shown") {
-      showPrivacyPopup();
       localStorage.setItem("cookieSeen", "shown");
+      var x = document.getElementById("snackbar");
+      x.className = "show";
     }
-    sendGAAnalytics();
+    window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+    ga('create', 'UA-58095062-1', 'auto');
+    ga('send', 'pageview');
   }, 5000)
 }
-
 showPrivacy();
-function sendGAAnalytics() {
-  (function (i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-      (i[r].q = i[r].q || []).push(arguments)
-    }, i[r].l = 1 * new Date(); a = s.createElement(o),
-      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-  ga('create', 'UA-58095062-1', 'auto');
-  ga('send', 'pageview');
-
-}
-
-function showPrivacyPopup() {
-  var x = document.getElementById("snackbar");
-  x.className = "show";
-}
 
 function closePrivacy() {
   var x = document.getElementById("snackbar");
@@ -177,7 +139,6 @@ document.getElementById("close-privacy").addEventListener('click', closePrivacy)
 
 function increaseLikeCounter() {
   var counters = document.querySelectorAll(".like-count");
-
   for (var i = 0; i < counters.length; i++) {
     var counter = counters[i];
     var value = parseInt(counter.innerText, 10);
@@ -185,9 +146,7 @@ function increaseLikeCounter() {
     value++;
     counter.innerText = value;
   }
-
   var target_share = document.querySelectorAll(".loved-count");
-
   for (var i = 0; i < target_share.length; i++) {
     target_share[i].style.color = "#2c4fff";
     target_share[i].style.fontWeight = "bold";

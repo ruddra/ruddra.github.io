@@ -112,14 +112,6 @@ function toggleMarkDownTable() {
   }
 }
 
-
-function closePrivacy() {
-  var x = document.getElementById("snackbar");
-  x.className = "hide";
-}
-
-document.getElementById("close-privacy").addEventListener('click', closePrivacy);
-
 function increaseLikeCounter() {
   var counters = document.querySelectorAll(".like-count");
   for (var i = 0; i < counters.length; i++) {

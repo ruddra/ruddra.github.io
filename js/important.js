@@ -42,6 +42,12 @@ function showPrivacy() {
     })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-58095062-1', 'auto');
     ga('send', 'pageview');
+    function closePrivacy() {
+      var x = document.getElementById("snackbar");
+      x.className = "hide";
+    }
+
+    document.getElementById("close-privacy").addEventListener('click', closePrivacy);
   }, 5000)
 }
 showPrivacy();

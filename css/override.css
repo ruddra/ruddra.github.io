@@ -484,7 +484,6 @@ fieldset {
 
 #close-privacy {
     cursor: pointer;
-    text-decoration: underline;
 }
 
 #close-privacy:hover {

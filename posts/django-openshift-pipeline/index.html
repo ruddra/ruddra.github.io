@@ -6,16 +6,16 @@ Policy</a>
 <a class=sidebar-nav-item href=/contact/>Contact
 Me</a><form target=_top class="sidebar-nav-item search-form" method=get action=/search><input type=text placeholder="Search ..." name=search aria-label=search class=tftextinput name=q size=21 maxlength=120><button type=submit aria-label="search button" class=tfbutton><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="rgb(155,155,155)"><path d="M9.145 18.29c-5.042.0-9.145-4.102-9.145-9.145S4.103.0 9.145.0s9.145 4.103 9.145 9.145-4.102 9.145-9.145 9.145zm0-15.167c-3.321.0-6.022 2.702-6.022 6.022s2.702 6.022 6.022 6.022 6.023-2.702 6.023-6.022-2.702-6.022-6.023-6.022zm9.263 12.443c-.817 1.176-1.852 2.188-3.046 2.981l5.452 5.453 3.014-3.013-5.42-5.421z"/></svg></button></form></nav><div class=sidebar-item id=copyright><p>&copy; 2020 All rights reserved &#183; <a href=/posts/index.xml><svg class="rss-feed" xmlns="http://www.w3.org/2000/svg" width="10" height="9" viewBox="0 0 24 24"><path d="M6.503 20.752c0 1.794-1.456 3.248-3.251 3.248-1.796.0-3.252-1.454-3.252-3.248s1.456-3.248 3.252-3.248c1.795.001 3.251 1.454 3.251 3.248zM0 8.18v4.811c6.05.062 10.96 4.966 11.022 11.009h4.817c-.062-8.71-7.118-15.758-15.839-15.82zm0-3.368c10.58.046 19.152 8.594 19.183 19.188H24c-.03-13.231-10.755-23.954-24-24v4.812z"/></svg></a></p></div></div><div id=snackbar>By using our website, you agree to our <a href=/privacy>privacy policy</a>.<br><a id=close-privacy>close</a></div><div class=wrap><div class=masthead><div class=container><h3 class=masthead-title><a href=https://ruddra.com/ title=Home style=color:#cfcdcd>Ruddra</a><small style=color:#8c8585;font-size:1.25rem>.com</small></h3><form target=_top class=masthead-search-form method=get action=/search><input type=text aria-label=search name=search placeholder="Search ..." class=tftextinput name=q size=21 maxlength=120><button type=submit aria-label="search button" class=tfbutton><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="rgb(155,155,155)"><path d="M9.145 18.29c-5.042.0-9.145-4.102-9.145-9.145S4.103.0 9.145.0s9.145 4.103 9.145 9.145-4.102 9.145-9.145 9.145zm0-15.167c-3.321.0-6.022 2.702-6.022 6.022s2.702 6.022 6.022 6.022 6.023-2.702 6.023-6.022-2.702-6.022-6.023-6.022zm9.263 12.443c-.817 1.176-1.852 2.188-3.046 2.981l5.452 5.453 3.014-3.013-5.42-5.421z"/></svg></button></form></div></div><div class=progress-container><div class=progress-bar id=myBar></div></div><div class="container content"><div id=blog-post class=post><h1 class=post-title>Deploy Django to OpenShift Using Jenkins Pipeline(CI/CD)</h1><span class=post-date>July 22, 2018 &#183; 4 Min Read &#183;
 5 Comments
-&#183; In <a class=tag-links-a href=/tags/openshift>OpenShift</a>, <a class=tag-links-a href=/tags/jenkins>Jenkins</a>, <a class=tag-links-a href=/tags/pipeline>Pipeline</a>, <a class=tag-links-a href=/tags/ci/cd>CI/CD</a></span><div class=img-container><img class=lozad src=data:image/jpeg;base64,/9j/2wCEAP////////////////////////////////////////////////////////////////////////////////////8B///////////////////////////////////////////////////////////////////////////////////////AABEIAA8AFAMBIgACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AHZozTetH1oAdmjNNooCzP/Z data-srcset="/content/images/2020/04/cargo_huff3fe6e6951efa884bee1d524a000acf_2497682_20x0_resize_q1_box.jpg 400w
+&#183; In <a class=tag-links-a href=/tags/openshift>OpenShift</a>, <a class=tag-links-a href=/tags/jenkins>Jenkins</a>, <a class=tag-links-a href=/tags/pipeline>Pipeline</a>, <a class=tag-links-a href=/tags/ci/cd>CI/CD</a></span><div class=img-container><img class=lozad src="data:image/jpeg;base64,/9j/2wCEAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDIBCQkJDAsMGA0NGDIhHCEyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMv/AABEIACYAMgMBIgACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APaEuVxnNSfalxXHL4nnC42xj8KP+EluHBwE4GTgVVieY683K4qF7hP71cY/iK5aZI1MRLDd95RgZxnk+9JBq+r3ieZBDCYf74lj/HqRU8yL9nJ/0jsPOVj1zTXIYdK5CTV76BsTOF9wAQfxHFC+IJSf9d/KqsRc6Ux89BR5fsK5v+25v+ehpP7bn/56GlYLnIvqWP4qlttS1SWS1FjL5UcbO0yyIRu6BSfXHJqKxhFmoAKPcyLwWUfKP73t7Y5/XGXeaVprzzXkiudq5J3kEkD0HeuCvioz92J7mCyuUXz1Pu/r+vM6G68Nan4y1WSGTWWSSNRJ5hQsIwOqgbhyeOfrVXRpL/whqGs6CkvnIhVhIVKiUFRnjJ6Zrz611W70rzJoklV28xTHLCdoUk9D37VoaBqf9r65BHf20Dq0cg+aLjt2OR/DVSk4QMJ0o1ato6dvkztLXV7/AEfS5IJbqS+W4ZQIXjOxeTkk5IHUflWSb17e5eCVtsiHBGQf1rsPEOh6eui2fiDSbKC2YIIrmOCMIOvXaOOvH4j0rlZ0i1CwMQRFnUExSEcj2J9P8iqpVeR2ezHiMKq0PaU/iTd0O/tHj7x/MUf2j/tH8xSxeDtXaJG/s9JMqDvS/UK3uPk6U/8A4QzVv+gYP/Bgn/xFdl0ePyyKDXbW8TOOX4Az2JOB+HNbHgTT11LxRbxytlIQbhwf4yCMfqQa567/ANQf99P/AEIV1/wy/wCRrk/69X/9CWufLopUZzW+x7/EE5e3hC+lr/M6T4gXpS5srcDgI0h98kAfyP51j6bOJtJMLZAfeDj0z/8AXq78Q/8AkLWn/XD/ANmNZekf8eSfVv51FP8AjM8vMNMvhb+b/Mic/wBo6HDO+BMIg4bHQ45/rXPRXTQu0eWKS8MM8E10Nh/yLkf/AFw/pXLN/r0+teK3aTSPtMAuei+bsmWty+rj6NRuHq//AH0aZRTubH//2Q==" data-srcset="/content/images/2020/04/cargo_huff3fe6e6951efa884bee1d524a000acf_2497682_50x0_resize_q75_box.jpg 400w
         
         ,
-        /content/images/2020/04/cargo_huff3fe6e6951efa884bee1d524a000acf_2497682_500x0_resize_q50_box.jpg 500w
+        /content/images/2020/04/cargo_huff3fe6e6951efa884bee1d524a000acf_2497682_500x0_resize_q75_box.jpg 500w
         
         ,
-        /content/images/2020/04/cargo_huff3fe6e6951efa884bee1d524a000acf_2497682_720x0_resize_q60_box.jpg 720w
+        /content/images/2020/04/cargo_huff3fe6e6951efa884bee1d524a000acf_2497682_720x0_resize_q75_box.jpg 720w
                
         ,
-        /content/images/2020/04/cargo_huff3fe6e6951efa884bee1d524a000acf_2497682_800x0_resize_q60_box.jpg 800w
+        /content/images/2020/04/cargo_huff3fe6e6951efa884bee1d524a000acf_2497682_800x0_resize_q75_box.jpg 800w
         
         ,
         /content/images/2020/04/cargo_huff3fe6e6951efa884bee1d524a000acf_2497682_1200x0_resize_q75_box.jpg 1200w
@@ -35,7 +35,6 @@ oc policy add-role-to-user edit system:serviceaccount:cicd:jenkins -n stage
 </code></pre></div><p>It will create the mysql server. Please keep in mind that, this MySQL will be available in 172.30.0.30. This configurations in defined in Service configuration section of the template</p><p>So, we are almost ready. Now please load the pipeline using:</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>oc new-app -f .openshift/pipelines/openshift-django-pipeline.yaml
 </code></pre></div><p>Now you will be able to see the pipeline in <strong>Console</strong> > <strong>CI/CD</strong> > <strong>Build</strong> > <strong>Pipelines</strong>. You can run it from there or from CLI like:</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>oc start-build djangopipeline
 </code></pre></div><p>To implement webhooks, you can look into <a href=https://blog.openshift.com/using-github-hooks-with-your-local-openshift-environment/>this project</a>.</p><h2 id=screenshots>Screenshots<a href=#screenshots class=hanchor aria-label=Anchor> <svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5.0-3-1.69-3-3.5S2.55 3 4 3h4c1.45.0 3 1.69 3 3.5.0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98.0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98.0-2-1.22-2-2.5.0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45.0 3-1.69 3-3.5S14.5 6 13 6z"/></svg>&#xFE0E;</a></h2><p>Pipeline execustion looks like this in Blue Ocean:<div class=page-img-container><img class="lozad page-image" data-srcset="/content/images/2018/07/Screen-Shot-2018-07-24-at-8.17.19-PM_hu5f94807010834f8f8cf71e9d58f45982_56873_500x0_resize_q75_box.jpg 500w
-        
         ,
         /content/images/2018/07/Screen-Shot-2018-07-24-at-8.17.19-PM_hu5f94807010834f8f8cf71e9d58f45982_56873_720x0_resize_q75_box.jpg 800w
                 
@@ -47,7 +46,6 @@ oc policy add-role-to-user edit system:serviceaccount:cicd:jenkins -n stage
         
         ,
          /content/images/2018/07/Screen-Shot-2018-07-24-at-8.17.19-PM_hu5f94807010834f8f8cf71e9d58f45982_56873_1200x0_resize_q75_box.jpg 1500w" alt=Screen-Shot-2018-07-24-at-8.17.19-PM><noscript><img src=/content/images/2018/07/Screen-Shot-2018-07-24-at-8.17.19-PM.jpg width=2464 height=504 alt=Screen-Shot-2018-07-24-at-8.17.19-PM></noscript></div></p><p>Stage View in Jenkins looks like this:<div class=page-img-container><img class="lozad page-image" data-srcset="/content/images/2018/07/Screen-Shot-2018-07-24-at-8.20.50-PM_hua049ad6a363022786cc9beac2ab877d8_78945_500x0_resize_q75_box.jpg 500w
-        
         ,
         /content/images/2018/07/Screen-Shot-2018-07-24-at-8.20.50-PM_hua049ad6a363022786cc9beac2ab877d8_78945_720x0_resize_q75_box.jpg 800w
                 
@@ -59,7 +57,6 @@ oc policy add-role-to-user edit system:serviceaccount:cicd:jenkins -n stage
         
         ,
          /content/images/2018/07/Screen-Shot-2018-07-24-at-8.20.50-PM_hua049ad6a363022786cc9beac2ab877d8_78945_1200x0_resize_q75_box.jpg 1500w" alt=Screen-Shot-2018-07-24-at-8.20.50-PM><noscript><img src=/content/images/2018/07/Screen-Shot-2018-07-24-at-8.20.50-PM.jpg width=2524 height=482 alt=Screen-Shot-2018-07-24-at-8.20.50-PM></noscript></div></p><p>In <strong>CI/CD</strong> project of OpenShift:<div class=page-img-container><img class="lozad page-image" data-srcset="/content/images/2018/07/Screen-Shot-2018-07-24-at-8.22.46-PM_hud408cee4865bcdf48603905c177303df_103148_500x0_resize_q75_box.jpg 500w
-        
         ,
         /content/images/2018/07/Screen-Shot-2018-07-24-at-8.22.46-PM_hud408cee4865bcdf48603905c177303df_103148_720x0_resize_q75_box.jpg 800w
                 
@@ -71,7 +68,6 @@ oc policy add-role-to-user edit system:serviceaccount:cicd:jenkins -n stage
         
         ,
          /content/images/2018/07/Screen-Shot-2018-07-24-at-8.22.46-PM_hud408cee4865bcdf48603905c177303df_103148_1200x0_resize_q75_box.jpg 1500w" alt=Screen-Shot-2018-07-24-at-8.22.46-PM><noscript><img src=/content/images/2018/07/Screen-Shot-2018-07-24-at-8.22.46-PM.jpg width=2076 height=1016 alt=Screen-Shot-2018-07-24-at-8.22.46-PM></noscript></div></p><p>In <strong>Dev</strong> project of OpenShift:<div class=page-img-container><img class="lozad page-image" data-srcset="/content/images/2018/07/Screen-Shot-2018-07-24-at-8.23.06-PM_hu5a2b76f57e3b9e395cf1e69bbb4bdc96_125235_500x0_resize_q75_box.jpg 500w
-        
         ,
         /content/images/2018/07/Screen-Shot-2018-07-24-at-8.23.06-PM_hu5a2b76f57e3b9e395cf1e69bbb4bdc96_125235_720x0_resize_q75_box.jpg 800w
                 
@@ -83,7 +79,6 @@ oc policy add-role-to-user edit system:serviceaccount:cicd:jenkins -n stage
         
         ,
          /content/images/2018/07/Screen-Shot-2018-07-24-at-8.23.06-PM_hu5a2b76f57e3b9e395cf1e69bbb4bdc96_125235_1200x0_resize_q75_box.jpg 1500w" alt=Screen-Shot-2018-07-24-at-8.23.06-PM><noscript><img src=/content/images/2018/07/Screen-Shot-2018-07-24-at-8.23.06-PM.jpg width=2066 height=1010 alt=Screen-Shot-2018-07-24-at-8.23.06-PM></noscript></div></p><p>In <strong>Stage</strong> project of OpenShift:<div class=page-img-container><img class="lozad page-image" data-srcset="/content/images/2018/07/Screen-Shot-2018-07-24-at-8.23.25-PM_hu7fe24ec6eca419ec1e7818040c2a3a63_134818_500x0_resize_q75_box.jpg 500w
-        
         ,
         /content/images/2018/07/Screen-Shot-2018-07-24-at-8.23.25-PM_hu7fe24ec6eca419ec1e7818040c2a3a63_134818_720x0_resize_q75_box.jpg 800w
                 
@@ -95,7 +90,6 @@ oc policy add-role-to-user edit system:serviceaccount:cicd:jenkins -n stage
         
         ,
          /content/images/2018/07/Screen-Shot-2018-07-24-at-8.23.25-PM_hu7fe24ec6eca419ec1e7818040c2a3a63_134818_1200x0_resize_q75_box.jpg 1500w" alt=Screen-Shot-2018-07-24-at-8.23.25-PM><noscript><img src=/content/images/2018/07/Screen-Shot-2018-07-24-at-8.23.25-PM.jpg width=2090 height=1048 alt=Screen-Shot-2018-07-24-at-8.23.25-PM></noscript></div></p><p>After Pipeline execution, it should look like this:<div class=page-img-container><img class="lozad page-image" data-srcset="/content/images/2018/07/Screen-Shot-2018-07-24-at-8.37.52-PM_hub9af6585e5f84c9207d024ad21d9acc9_85649_500x0_resize_q75_box.jpg 500w
-        
         ,
         /content/images/2018/07/Screen-Shot-2018-07-24-at-8.37.52-PM_hub9af6585e5f84c9207d024ad21d9acc9_85649_720x0_resize_q75_box.jpg 800w
                 

@@ -149,17 +149,7 @@ a {
     }
 }
 
-.tftextinput::-webkit-input-placeholder {
-    font-size: 16px;
-    padding-left: 5px;
-}
-
-.tftextinput::-moz-placeholder {
-    font-size: 16px;
-    padding-left: 5px;
-}
-
-.tftextinput:-ms-input-placeholder {
+input[name="search"]::placeholder {
     font-size: 16px;
     padding-left: 5px;
 }

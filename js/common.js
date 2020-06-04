@@ -60,8 +60,28 @@ function updateForm() {
 }
 
 function getCode() {
-  var urlParams = new URLSearchParams(window.location.search);
-  return urlParams.get('code');
+  var code;
+  if (!URLSearchParams) {
+    var getUrlParams = function getUrlParams() {
+      var result = {};
+      var params = (window.location.search.split('?')[1] || '').split('&');
+
+      for (var param in params) {
+        if (params.hasOwnProperty(param)) {
+          var paramParts = params[param].split('=');
+          result[paramParts[0]] = decodeURIComponent(paramParts[1] || "");
+        }
+      }
+
+      return result;
+    };
+
+    code = getUrlParams().code;
+  } else {
+    var urlParams = new URLSearchParams(window.location.search);
+    code = urlParams.get('code');
+  }
+  return code;
 }
 
 function submitComment(event) {

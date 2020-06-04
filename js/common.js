@@ -1,6 +1,30 @@
 "use strict";
-var observer = lozad();
-observer.observe();
+function browserSupportsAllFeatures() {
+  return window.IntersectionObserver && window.URLSearchParams;
+}
+
+function loadScript() {
+  var js = document.createElement('script');
+  js.src = "https://polyfill.io/v3/polyfill.min.js?flags=gated&features=Object.assign%2CIntersectionObserver%2CURLSearchParams";
+  js.onload = function () {
+    loadLozad();
+  };
+  js.onerror = function () {
+    console.log("Error")
+  };
+  document.head.appendChild(js);
+}
+
+function loadLozad() {
+  var observer = lozad();
+  observer.observe();
+}
+
+if (!browserSupportsAllFeatures) {
+  loadScript()
+} else {
+  loadLozad();
+}
 
 if (window.location.hash == "#comment-submitted") {
   var $comTarget = document.getElementById('comment-submitted-box');

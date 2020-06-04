@@ -150,6 +150,7 @@ img {
     visibility: hidden;
     display: block;
     min-width: 250px;
+    max-width: 350px;
     margin: auto;
     background-color: #333333;
     color: #ffffff;
@@ -160,12 +161,14 @@ img {
     z-index: 1000;
     bottom: 30px;
     font-size: 13px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 5%;
+    float: left;
 }
 
 #snackbar a {
     color: rgb(63, 196, 255);
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
 .sidebar-checkbox {

@@ -1,3 +1,20 @@
+function setCookie(name, value) {
+  document.cookie = name + "=" + (value || "") + ";expires=expires=Fri, 31 Dec 9999 23:59:59 GMT;domain=;path=/";
+}
+function getCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  for (var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+  }
+  return null;
+}
+function eraseCookie(name) {
+  document.cookie = name + '=; Max-Age=-99999999;';
+}
+
 if (window.location.hash == "#comment-submitted") {
   var $comTarget = document.getElementById('comment-submitted-box');
   $comTarget.style.display = 'block';
@@ -30,18 +47,18 @@ function storeForm() {
   var commentParent = commentParentField.value;
   var comment = commentField.value;
   var getEmail = checkboxField.value;
-  localStorage.setItem('comment-parent', commentParent);
-  localStorage.setItem('comment', comment);
-  localStorage.setItem('getemail', getEmail);
+  setCookie('comment-parent', commentParent);
+  setCookie('comment', comment);
+  setCookie('getemail', getEmail);
 }
 
 function updateForm() {
   var commentParentField = document.getElementById('comment-parent');
   var commentField = document.getElementById('commento-textarea-root');
   var checkboxField = document.getElementById('commento-anonymous-checkbox-root');
-  var commentParentValue = localStorage.getItem('comment-parent');
-  var commentValue = localStorage.getItem('comment');
-  var emailValue = localStorage.getItem('getemail');
+  var commentParentValue = getCookie('comment-parent');
+  var commentValue = getCookie('comment');
+  var emailValue = getCookie('getemail');
   var success;
 
   if (commentValue) {
@@ -53,9 +70,9 @@ function updateForm() {
     success = false;
   }
 
-  localStorage.removeItem('comment-parent');
-  localStorage.removeItem('comment');
-  localStorage.removeItem('getemail');
+  eraseCookie('comment-parent');
+  eraseCookie('comment');
+  eraseCookie('getemail');
   return success;
 }
 
@@ -158,7 +175,7 @@ function loveArticle() {
 }
 
 function alreadyLiked() {
-  return isNaN(localStorage.getItem("liked-" + getSlug()));
+  return isNaN(getCookie("liked-" + getSlug()));
 }
 
 function getSlug() {
@@ -224,7 +241,7 @@ function submitLike() {
 }
 
 function storeLiked() {
-  localStorage.setItem("liked-" + getSlug(), "liked");
+  setCookie("liked-" + getSlug(), "liked");
 }
 
 function makeRed() {

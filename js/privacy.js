@@ -1,9 +1,11 @@
 function showPrivacy() {
   setTimeout(function () {
     if (localStorage.getItem("cookieSeen") != "shown") {
-      localStorage.setItem("cookieSeen", "shown");
-      var x = document.getElementById("snackbar");
-      x.className = "show";
+      if (!document.cookie.split('; ').find(row => row.startsWith('cookieSeen'))) {
+        var x = document.getElementById("snackbar");
+        x.className = "show";
+        document.cookie = "cookieSeen=true; expires=; path=/";
+      }
     }
     (function (i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
@@ -13,6 +15,7 @@ function showPrivacy() {
     })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-58095062-1', 'auto');
     ga('send', 'pageview');
+
     function closePrivacy() {
       var x = document.getElementById("snackbar");
       x.className = "hide";

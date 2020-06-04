@@ -642,15 +642,9 @@ amp-img img {
     .side-share {
         margin-left: -20em;
     }
-
-    .photo-credit {
-        margin-top: -20px;
-    }
 }
 
 @media screen and (max-width: 48em) {
-
-
     .side-share {
         display: none;
     }
@@ -688,7 +682,7 @@ amp-img img {
 
 }
 
-@media (max-width: 30em) {
+@media screen and (max-width: 30em) {
     .progress-bar {
         height: 0.3rem;
     }
@@ -740,7 +734,7 @@ amp-img img {
     }
 }
 
-@media (max-width: 15em) {
+@media screen and (max-width: 15em) {
     .tfbutton {
         margin-left: -35px;
     }

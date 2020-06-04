@@ -329,8 +329,8 @@ fieldset {
 
 .pagination-arrow {
     color: #222222;
-    font-family: "PT Sans", Helvetica, Arial, sans-serif;
     font-weight: 700;
+    font-size: 14px;
 }
 
 .pagination-image img,
@@ -596,13 +596,6 @@ fieldset {
     font-size: 14px;
     padding-top: 4px;
     margin-bottom: 0;
-}
-
-.post h3,
-.post h4,
-.post h5,
-.post h6 {
-    font-weight: 700;
 }
 
 #list,

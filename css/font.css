@@ -25,17 +25,3 @@
         url("/fonts/merriweather-v21-latin-700.ttf") format("truetype"),
         url("/fonts/merriweather-v21-latin-700.svg#Merriweather") format("svg");
 }
-
-@font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: url("/fonts/pt-sans-v11-latin-700.eot");
-    src: local("PT Sans Bold"), local("PTSans-Bold"),
-        url("/fonts/pt-sans-v11-latin-700.eot?#iefix") format("embedded-opentype"),
-        url("/fonts/pt-sans-v11-latin-700.woff2") format("woff2"),
-        url("/fonts/pt-sans-v11-latin-700.woff") format("woff"),
-        url("/fonts/pt-sans-v11-latin-700.ttf") format("truetype"),
-        url("/fonts/pt-sans-v11-latin-700.svg#PTSans") format("svg");
-}

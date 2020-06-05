@@ -2,6 +2,10 @@
     background-color: #ffc
 }
 
+.highlight .p {
+    color: #9b15a0
+}
+
 .highlight .c {
     color: #757272
 }
@@ -103,7 +107,7 @@
 }
 
 .highlight .s {
-    color: ##bf4148
+    color: #bf4148
 }
 
 .highlight .na {

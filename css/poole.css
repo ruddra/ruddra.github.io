@@ -149,7 +149,7 @@ a {
     }
 }
 
-input[name="search"]::placeholder {
+input[name="q"]::placeholder {
     font-size: 16px;
     padding-left: 5px;
 }

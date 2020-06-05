@@ -131,6 +131,9 @@
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+    text-shadow: -0.02ex 0 #222,
+        0.02ex 0 #222;
+
 }
 
 .commento-root .commento-round-check input[type="checkbox"]+label:last-child,

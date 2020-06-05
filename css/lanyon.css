@@ -41,6 +41,7 @@ h2 {
 
 a {
     color: #0f56b0;
+    padding: 2px;
 }
 
 p {
@@ -55,8 +56,10 @@ strong {
 blockquote {
     padding: 0.5rem 1rem;
     margin: 0.8rem 0;
-    color: #7a7a7a;
-    border-left: 0.25rem solid #e5e5e5;
+    color: #727272;
+    border-left: 0.25rem solid #d2d2d2;
+    letter-spacing: .5px;
+    line-height: 1.5;
 }
 
 blockquote p:last-child {
@@ -137,7 +140,7 @@ img {
 }
 
 .tag-links-a {
-    color: #5e5757;
+    color: #555555;
 }
 
 .related-posts li a:hover small {
@@ -825,7 +828,6 @@ a.pagination-item:hover {
 
 @media (min-width: 30em) {
     blockquote {
-        padding-right: 5rem;
         padding-left: 1.25rem;
     }
 }

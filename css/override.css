@@ -680,6 +680,11 @@ input+.collapse-comment .hide-text {
     display: none;
 }
 
+/* misc */
+a strong {
+    color: #0e76a8;
+}
+
 /* mobile display */
 
 @media screen and (max-width: 64em) {

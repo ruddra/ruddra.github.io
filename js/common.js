@@ -1,5 +1,5 @@
 function setCookie(name, value) {
-  document.cookie = name + "=" + (value || "") + ";expires=expires=Fri, 31 Dec 9999 23:59:59 GMT;domain=;path=/";
+  document.cookie = name + "=" + (value || "") + ";expires=expires=Fri, 31 Dec 9999 23:59:59 UTC;path=/";
 }
 function getCookie(name) {
   var nameEQ = name + "=";
@@ -12,7 +12,7 @@ function getCookie(name) {
   return null;
 }
 function eraseCookie(name) {
-  document.cookie = name + '=; Max-Age=-99999999;';
+  document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
 }
 
 if (window.location.hash == "#comment-submitted") {

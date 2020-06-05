@@ -398,7 +398,7 @@ fieldset {
 
 /* The progress bar (scroll indicator) */
 .progress-bar {
-    height: 0.2rem;
+    height: 0.3rem;
     background: rgb(100, 46, 204);
     background: -moz-linear-gradient(90deg,
             rgba(100, 46, 204, 1) 0%,

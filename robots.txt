@@ -1,1 +1,2 @@
+Sitemap: https://ruddra.com/sitemap.xml
 User-agent: *

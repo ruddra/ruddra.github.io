@@ -1,5 +1,5 @@
 {
-    "name": "Ruddra.com| Blog by Arnab Kumar Shil",
+    "name": "Ruddra.com| Coding Blog by Arnab Kumar Shil",
     "short_name": "Ruddra",
     "icons": [
         {
@@ -25,5 +25,8 @@
     ],
     "theme_color": "#000000",
     "background_color": "#ffffff",
-    "display": "standalone"
+    "display": "standalone",
+    "start_url": "/",
+    "scope": "/",
+    "orientation": "portrait"
 }

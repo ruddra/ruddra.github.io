@@ -1,1 +1,31 @@
-function setData(e,t){try{localStorage.setItem(e,t)}catch(n){t=encodeURIComponent(t),document.cookie=e+"="+(t||"")+";expires=expires=Fri, 31 Dec 9999 23:59:59 UTC;path=/"}}function getData(e){try{return localStorage.getItem(e)}catch(a){for(var t=e+"=",n=document.cookie.split(";"),o=0;o<n.length;o++){for(var r=n[o];" "==r.charAt(0);)r=r.substring(1,r.length);if(0==r.indexOf(t))return decodeURIComponent(r.substring(t.length,r.length))}return null}}function eraseData(e){try{return localStorage.removeItem(e)}catch(t){document.cookie=e+"=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;"}}
+function setData(name, value) {
+  try {
+    localStorage.setItem(name, value);
+  } catch (e) {
+    value = encodeURIComponent(value)
+    document.cookie = name + "=" + (value || "") + ";expires=expires=Fri, 31 Dec 9999 23:59:59 UTC;path=/";
+  }
+}
+
+function getData(name) {
+  try {
+    return localStorage.getItem(name);
+  } catch (e) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+      if (c.indexOf(nameEQ) == 0) return decodeURIComponent(c.substring(nameEQ.length, c.length));
+    }
+    return null;
+  }
+}
+
+function eraseData(name) {
+  try {
+    return localStorage.removeItem(name);
+  } catch (e) {
+    document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+  }
+}

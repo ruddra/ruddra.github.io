@@ -17,7 +17,7 @@
 <title>
 Implementation of Forgot/Reset Password Feature in Django
 </title>
-<meta name=description content="Django has its own implementation for reset/forgot password for its admin site. We are going to use …
+<meta name=description content="A DYI reset/forgot password implementation based on Django's source code in Django.
 ">
 <link rel=preload as=font type=font/woff2 href=/fonts/pt-sans-v11-latin-regular.woff2 crossorigin>
 <link rel=preload as=font type=font/woff2 href=/fonts/pt-serif-v11-latin-regular.woff2 crossorigin>
@@ -50,18 +50,18 @@ Implementation of Forgot/Reset Password Feature in Django
 <meta name=twitter:site content="@ruddra">
 <meta name=twitter:creator content="@ruddra">
 <meta name=twitter:title content="Implementation of Forgot/Reset Password Feature in Django">
-<meta name=twitter:description content="Django has its own implementation for reset/forgot password for its admin site. We are going to use …
+<meta name=twitter:description content="A DYI reset/forgot password implementation based on Django's source code in Django.
 ">
 <meta property="og:type" content="Article">
 <meta property="og:title" content="Implementation of Forgot/Reset Password Feature in Django">
-<meta property="og:description" content="Django has its own implementation for reset/forgot password for its admin site. We are going to use …
+<meta property="og:description" content="A DYI reset/forgot password implementation based on Django's source code in Django.
 ">
 <meta name=twitter:image content="https://ruddra.com/content/images/2020/03/reset.jpg">
 <meta name=twitter:image:src content="https://ruddra.com/content/images/2020/03/reset.jpg">
 <meta property="article:tag" content="python">
 <meta property="article:tag" content="django">
 <meta property="article:tag" content="ruddra">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"NewsArticle","identifier":"implementation-of-forgot-reset-password-feature-in-django","headline":"Implementation of Forgot\/Reset Password Feature in Django","keywords":["Python","Django","Blog"],"url":"https:\/\/ruddra.com\/amp\/implementation-of-forgot-reset-password-feature-in-django\/","dateCreated":"2014-10-21T00:00:00.00Z","datePublished":"2014-10-21T00:00:00.00Z","dateModified":"2022-02-09T00:00:00.00Z","articleBody":"\u003cp class=\"headline-description\"\u003eDjango has its own implementation for reset/forgot password for its admin site. We are going to use …\n\u003c/p\u003e","mainEntityOfPage":"https:\/\/ruddra.com\/amp\/implementation-of-forgot-reset-password-feature-in-django\/","image":{"@type":"ImageObject","url":"https:\/\/ruddra.com\/content\/images\/2020\/03\/reset.jpg","height":300,"width":750},"creator":["Arnab Kumar Shil"],"author":{"@type":"Person","name":"Arnab Kumar Shil","url":"https://ruddra.com"},"wordCount":"1002","commentCount":"23","copyrightYear":"2014","discussionUrl":"https:\/\/ruddra.com\/amp\/implementation-of-forgot-reset-password-feature-in-django\/#comment-headline","isFamilyFriendly":"true","maintainer":{"@type":"Person","name":"Arnab Kumar Shil","url":"https://ruddra.com"},"publisher":{"@type":"Organization","name":"Coding Blog by Arnab Kumar Shil","url":"https://ruddra.com","logo":{"@type":"ImageObject","url":"https:\/\/ruddra.com\/logo.png"}},"thumbnailUrl":"https:\/\/ruddra.com\/content\/images\/2020\/03\/reset.jpg"}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"NewsArticle","identifier":"implementation-of-forgot-reset-password-feature-in-django","headline":"Implementation of Forgot\/Reset Password Feature in Django","keywords":["Python","Django","Blog"],"url":"https:\/\/ruddra.com\/amp\/implementation-of-forgot-reset-password-feature-in-django\/","dateCreated":"2014-10-21T00:00:00.00Z","datePublished":"2014-10-21T00:00:00.00Z","dateModified":"2022-02-09T00:00:00.00Z","articleBody":"\u003cp class=\"headline-description\"\u003eA DYI reset/forgot password implementation based on Django's source code in Django.\n\u003c/p\u003e","mainEntityOfPage":"https:\/\/ruddra.com\/amp\/implementation-of-forgot-reset-password-feature-in-django\/","image":{"@type":"ImageObject","url":"https:\/\/ruddra.com\/content\/images\/2020\/03\/reset.jpg","height":300,"width":750},"creator":["Arnab Kumar Shil"],"author":{"@type":"Person","name":"Arnab Kumar Shil","url":"https://ruddra.com"},"wordCount":"1002","commentCount":"23","copyrightYear":"2014","discussionUrl":"https:\/\/ruddra.com\/amp\/implementation-of-forgot-reset-password-feature-in-django\/#comment-headline","isFamilyFriendly":"true","maintainer":{"@type":"Person","name":"Arnab Kumar Shil","url":"https://ruddra.com"},"publisher":{"@type":"Organization","name":"Coding Blog by Arnab Kumar Shil","url":"https://ruddra.com","logo":{"@type":"ImageObject","url":"https:\/\/ruddra.com\/logo.png"}},"thumbnailUrl":"https:\/\/ruddra.com\/content\/images\/2020\/03\/reset.jpg"}</script>
 </head>
 <body>
 </span>
@@ -84,6 +84,7 @@ Implementation of Forgot/Reset Password Feature in Django
 <section class=content>
 <article id=blog-post class=post>
 <h1 class=post-title><a href=https://ruddra.com/amp/implementation-of-forgot-reset-password-feature-in-django/>Implementation of Forgot/Reset Password Feature in Django</a></h1>
+<p class=headline-description>A DYI reset/forgot password implementation based on Django's source code in Django.</p>
 <span class=post-date>Oct 21, 2014 &#183; 5 Min Read &#183;
 5 Likes
 &#183;
@@ -305,7 +306,7 @@ Implementation of Forgot/Reset Password Feature in Django
 </a>
 </li>
 <li class=social-share>
-<a aria-label=LN target=_blank rel=noreferrer href="https://www.linkedin.com/shareArticle/?mini=true&url=https%3a%2f%2fruddra.com%2famp%2fimplementation-of-forgot-reset-password-feature-in-django%2f&title=Implementation%20of%20Forgot%2fReset%20Password%20Feature%20in%20Django&summary=&source="><svg xmlns="http://www.w3.org/2000/svg" class="ln-share-sign" width="24" height="24" viewBox="0 0 24 24" fill="#d0d0d0"><path d="M5 3.5C5 4.9 3.9 6 2.5 6S0 4.9.0 3.5C0 2.1 1.1 1 2.5 1S5 2.1 5 3.5zM5 8H0v16h5V8zm8 0H8v16h5v-8.4c0-4.7 6-5.1 6 0V24h5V13.9c0-7.9-8.9-7.6-11-3.7V8z"/></svg>
+<a aria-label=LN target=_blank rel=noreferrer href="https://www.linkedin.com/shareArticle/?mini=true&url=https%3a%2f%2fruddra.com%2famp%2fimplementation-of-forgot-reset-password-feature-in-django%2f&title=Implementation%20of%20Forgot%2fReset%20Password%20Feature%20in%20Django&summary=A%20DYI%20reset%2fforgot%20password%20implementation%20based%20on%20Django%27s%20source%20code%20in%20Django.&source="><svg xmlns="http://www.w3.org/2000/svg" class="ln-share-sign" width="24" height="24" viewBox="0 0 24 24" fill="#d0d0d0"><path d="M5 3.5C5 4.9 3.9 6 2.5 6S0 4.9.0 3.5C0 2.1 1.1 1 2.5 1S5 2.1 5 3.5zM5 8H0v16h5V8zm8 0H8v16h5v-8.4c0-4.7 6-5.1 6 0V24h5V13.9c0-7.9-8.9-7.6-11-3.7V8z"/></svg>
 </a>
 </li>
 </span>

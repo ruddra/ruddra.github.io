@@ -40,11 +40,11 @@ Use Docker for Accessing Database in AWS CodeBuild
 <meta property="article:publisher" content="https://ruddra.com">
 <meta property="article:section" content="Bulletin">
 <meta property="article:published_time" content="2020-01-31T00:00:00.00Z">
-<meta property="article:modified_time" content="2022-02-07T00:00:00.00Z">
-<meta property="og:updated_time" content="2022-02-07T00:00:00.00Z">
+<meta property="article:modified_time" content="2022-02-09T00:00:00.00Z">
+<meta property="og:updated_time" content="2022-02-09T00:00:00.00Z">
 <meta property="og:image" content="https://ruddra.com/content/images/2020/01/build.jpg">
 <meta property="og:image:secure_url" content="https://ruddra.com/content/images/2020/01/build.jpg">
-<meta name=revised content="Ruddra.com, 10/07/7026">
+<meta name=revised content="Ruddra.com, 12/07/9026">
 <meta property="og:image:width" content="720">
 <meta property="og:image:height" content="350">
 <meta name=twitter:site content="@ruddra">
@@ -65,7 +65,7 @@ Use Docker for Accessing Database in AWS CodeBuild
 <meta property="article:tag" content="ci/cd">
 <meta property="article:tag" content="devops">
 <meta property="article:tag" content="ruddra">
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"NewsArticle","identifier":"aws-codebuild-use-database","headline":"Use Docker for Accessing Database in AWS CodeBuild","keywords":["Docker","CodeBuild","AWS","Pipeline","CI\/CD","DevOps","Blog"],"url":"https:\/\/ruddra.com\/amp\/aws-codebuild-use-database\/","dateCreated":"2020-01-31T00:00:00.00Z","datePublished":"2020-01-31T00:00:00.00Z","dateModified":"2022-02-07T00:00:00.00Z","articleBody":"\u003cp class=\"headline-description\"\u003eUsing docker to access temporary database in AWS CodeBuild when running test cases.\n\u003c/p\u003e","mainEntityOfPage":"https:\/\/ruddra.com\/amp\/aws-codebuild-use-database\/","image":{"@type":"ImageObject","url":"https:\/\/ruddra.com\/content\/images\/2020\/01\/build.jpg","height":300,"width":750},"creator":["Arnab Kumar Shil"],"author":{"@type":"Person","name":"Arnab Kumar Shil","url":"https://ruddra.com"},"wordCount":"349","commentCount":"5","copyrightYear":"2020","discussionUrl":"https:\/\/ruddra.com\/amp\/aws-codebuild-use-database\/#comment-headline","isFamilyFriendly":"true","maintainer":{"@type":"Person","name":"Arnab Kumar Shil","url":"https://ruddra.com"},"publisher":{"@type":"Organization","name":"Coding Blog by Arnab Kumar Shil","url":"https://ruddra.com","logo":{"@type":"ImageObject","url":"https:\/\/ruddra.com\/logo.png"}},"thumbnailUrl":"https:\/\/ruddra.com\/content\/images\/2020\/01\/build.jpg"}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"NewsArticle","identifier":"aws-codebuild-use-database","headline":"Use Docker for Accessing Database in AWS CodeBuild","keywords":["Docker","CodeBuild","AWS","Pipeline","CI\/CD","DevOps","Blog"],"url":"https:\/\/ruddra.com\/amp\/aws-codebuild-use-database\/","dateCreated":"2020-01-31T00:00:00.00Z","datePublished":"2020-01-31T00:00:00.00Z","dateModified":"2022-02-09T00:00:00.00Z","articleBody":"\u003cp class=\"headline-description\"\u003eUsing docker to access temporary database in AWS CodeBuild when running test cases.\n\u003c/p\u003e","mainEntityOfPage":"https:\/\/ruddra.com\/amp\/aws-codebuild-use-database\/","image":{"@type":"ImageObject","url":"https:\/\/ruddra.com\/content\/images\/2020\/01\/build.jpg","height":300,"width":750},"creator":["Arnab Kumar Shil"],"author":{"@type":"Person","name":"Arnab Kumar Shil","url":"https://ruddra.com"},"wordCount":"349","commentCount":"5","copyrightYear":"2020","discussionUrl":"https:\/\/ruddra.com\/amp\/aws-codebuild-use-database\/#comment-headline","isFamilyFriendly":"true","maintainer":{"@type":"Person","name":"Arnab Kumar Shil","url":"https://ruddra.com"},"publisher":{"@type":"Organization","name":"Coding Blog by Arnab Kumar Shil","url":"https://ruddra.com","logo":{"@type":"ImageObject","url":"https:\/\/ruddra.com\/logo.png"}},"thumbnailUrl":"https:\/\/ruddra.com\/content\/images\/2020\/01\/build.jpg"}</script>
 </head>
 <body>
 </span>
@@ -159,7 +159,7 @@ Use Docker for Accessing Database in AWS CodeBuild
 <p>After configuring CodeBuild, now it is time to start the build process from the dashboard. It can be either triggered from git(if you configured it like this), or you need to start the build manually. That is it, inside CodeBuild processes, it will start a Postgres Database, and allow django to run migrations.</p>
 <h2 id=in-conclusion>In conclusion<a href=#in-conclusion class=hanchor aria-label=Anchor> <svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5.0-3-1.69-3-3.5S2.55 3 4 3h4c1.45.0 3 1.69 3 3.5.0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98.0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98.0-2-1.22-2-2.5.0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45.0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a> </h2>
 <p>Spinning up a docker container for database, seems to me like a very efficient solution. Similarly you can spin up any docker container to use as a temporary service, for example run redis, memcache etc.</p>
-<p><strong>Last updated</strong>: Feb 07, 2022</p>
+<p><strong>Last updated</strong>: Feb 09, 2022</p>
 </div>
 </article>
 </section>

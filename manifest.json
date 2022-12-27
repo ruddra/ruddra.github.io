@@ -27,7 +27,7 @@
     "theme_color": "#000000",
     "background_color": "#ffffff",
     "display": "standalone",
-    "start_url": "https://ruddra.com",
+    "start_url": "/",
     "scope": "/",
     "orientation": "portrait"
 }

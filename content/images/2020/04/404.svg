@@ -97,7 +97,7 @@
             }
 
             .cls-17 {
-              font-family: 'PT Sans', sans-serif;
+              font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
               font-size: 49.87px;
             }
 
